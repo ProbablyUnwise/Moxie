@@ -1,0 +1,1 @@
+If you want to contribute, ask in #development on the Discord server.

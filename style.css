@@ -1,35 +1,15 @@
 html {
-    background-color: black;
-    background: url(images/background.jpg);
-    position: relative;
-    min-height: 100%;
+	background-color: black;
 }
-
-body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-    background: inherit;
-}
-
 #title-bar {
+    background-color: #5E0000;
     color: white;
-    background: url(images/dark_wood.png);
-    border-bottom: thin solid black;
-    margin-bottom: 40px;
 }
-
 #menu-bar {
+    background-color: #0B005E;
     color: white;
 }
-
 #content-area {
+    background-color: #1B5E00;
     color: white;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
 }

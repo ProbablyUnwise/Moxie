@@ -11,16 +11,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BattleMaster</title>
-
 </head>
 
 <body>
-    <div id="container" class="container-fluid">
+    <header class="container-fluid">
         <div class="row">
             <div id="title-bar" class="container-fluid">
                 <p><strong>Title Bar</strong> - <em>container-fluid</em> - Always 100% of viewport.</p>
             </div>
         </div>
+    </header>
+    <main class="container-fluid">
         <div class="row">
             <div id="menu-bar" class="col-sm-4 col-lg-2">
                 <p><strong>Menu Bar</strong> - <em>col-sm-4, col-lg-2</em><br>Scales to always stay roughly the same size.<br>Stacks on top of Content Area on phones.</p>
@@ -29,9 +30,12 @@
                 <p><strong>Content Area</strong> - <em>col-sm-8, col-lg-10</em><br>Scales to always stay roughly the same size.<br>Stacks under Menu Bar on phones.</p>
             </div>
         </div>
-    </div>
-
-
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>There would probably be some kind of info here.</p>
+        </div>
+    </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

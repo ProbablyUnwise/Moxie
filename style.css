@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Caligula;
+    src: url(fonts/Caligula.ttf);
+}
+
 html {
     background-color: black;
     background: url(images/background.jpg);
@@ -12,10 +17,14 @@ body {
 }
 
 #title-bar {
-    color: white;
+    font-family: Caligula;
     background: url(images/title_bar.jpg);
     border-bottom: thin solid black;
-    margin-bottom: 40px;
+}
+
+#title-bar a {
+    color: white;
+    padding-right: 20px;
 }
 
 #menu-bar {
@@ -23,6 +32,7 @@ body {
 }
 
 #content-area {
+    padding-top: 40px;
     color: white;
 }
 

@@ -13,7 +13,7 @@ body {
 
 #title-bar {
     color: white;
-    background: url(images/dark_wood.png);
+    background: url(images/title_bar.jpg);
     border-bottom: thin solid black;
     margin-bottom: 40px;
 }

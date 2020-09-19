@@ -16,6 +16,11 @@ body {
 
 footer {
     color: white;
+    background-color: black;
+    background: url(images/background.jpg);
+    position: fixed;
+    bottom: 0;
+    border-top: thin solid #181818;
 }
 
 footer a {

@@ -18,9 +18,9 @@ footer {
     color: white;
     background-color: black;
     background: url(images/background.jpg);
+    border-top: thin solid #181818;
     position: fixed;
     bottom: 0;
-    border-top: thin solid #181818;
 }
 
 footer a {
@@ -32,6 +32,9 @@ footer a {
     font-size: large;
     background: url(images/title_bar.jpg);
     border-bottom: thin solid black;
+    position: fixed;
+    top: 0;
+    z-index: 99;
 }
 
 #title-bar a {
@@ -42,9 +45,13 @@ footer a {
     font-family: Caligula;
     color: white;
     min-height: 575px;
+    min-width: 200px;
     background-image: url(images/BM-Sidebar-night.png);
     background-repeat: no-repeat;
     padding-top: 150px;
+    position: fixed;
+    left: 0;
+    z-index: 98;
 }
 
 #menu-bar a {
@@ -52,6 +59,10 @@ footer a {
     font-size: x-large;
     text-shadow: 0px 1px 1px #4d4d4d;
     color: #222;
+}
+
+#menu-bar-placeholder {
+    min-width: 200px;
 }
 
 #content-area {

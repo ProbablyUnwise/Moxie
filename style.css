@@ -42,7 +42,6 @@ footer a {
 }
 
 #menu-bar {
-    font-family: Caligula;
     color: white;
     min-height: 575px;
     min-width: 200px;
@@ -61,11 +60,14 @@ footer a {
     color: #222;
 }
 
-#menu-bar-placeholder {
-    min-width: 200px;
+#menu-bar li {
+    font-family: Caligula;
+    list-style: none;
+    margin-left: none;
 }
 
 #mobile-menu {
+    font-family: Caligula;
     text-align: center;
     margin-bottom: 20px;
 }

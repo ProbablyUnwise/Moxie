@@ -5,7 +5,7 @@
 
 html {
     background-color: black;
-    background: url(images/background.jpg);
+    background: url(images/background2.jpg);
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 footer {
     color: white;
     background-color: black;
-    background: url(images/background.jpg);
+    background: url(images/background2.jpg);
     border-top: thin solid #181818;
     position: fixed;
     bottom: 0;
@@ -84,7 +84,7 @@ footer a {
     left: 20px;
     bottom: 100px;
     background-color: black;
-    background: url(images/background.jpg);
+    background: url(images/background2.jpg);
     padding: 5px;
     border: thin solid #808080;
 }

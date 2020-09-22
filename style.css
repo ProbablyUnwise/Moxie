@@ -48,6 +48,7 @@ h6 {
     background: url(images/bm-title-bar.jpg);
     position: fixed;
     min-height: 40px;
+    padding-top: 5px;
     top: 0;
     z-index: 99;
 }
@@ -60,7 +61,7 @@ h6 {
     color: white;
     min-height: 575px;
     min-width: 200px;
-    background-image: url(images/bm-sidebar-night.png);
+    background-image: url(images/bm-menu.png);
     background-repeat: no-repeat;
     padding-top: 140px;
     padding-left: 20px;

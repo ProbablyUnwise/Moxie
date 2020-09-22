@@ -5,13 +5,15 @@
 
 /* Make the mobile icons blink when needed */
 @keyframes blink {
-  100%,
-  0% {
-    fill: #ffcaa8;
-  }
-  60% {
-    fill: #fff;
-  }
+
+    100%,
+    0% {
+        fill: #ffcaa8;
+    }
+
+    60% {
+        fill: #ff0000;
+    }
 }
 
 body {
@@ -30,7 +32,12 @@ footer a {
     color: #83b6e6;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Caligula;
     color: white;
 }
@@ -38,7 +45,7 @@ h1,h2,h3,h4,h5,h6 {
 #title-bar {
     font-family: Caligula;
     font-size: medium;
-    background: url(images/title_bar.jpg);
+    background: url(images/bm-title-bar.jpg);
     position: fixed;
     top: 0;
     z-index: 99;
@@ -57,13 +64,13 @@ h1,h2,h3,h4,h5,h6 {
     padding-top: 140px;
     position: fixed;
     left: 0;
-    z-index: 98;
+    z-index: 100;
 }
 
 #menu-bar a {
-    font-size: 16pt;
+    font-size: 14pt;
     text-shadow: 2px 2px #000;
-    color: #ffcaa8;
+    color: #ffe284;
 }
 
 #menu-bar li {
@@ -79,7 +86,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #mobile-menu .messages g path {
-  animation: blink 1s infinite;
+    animation: blink 0.8s infinite;
 }
 
 #content-area {
@@ -88,7 +95,8 @@ h1,h2,h3,h4,h5,h6 {
     padding-bottom: 180px;
 }
 
-#content-area a, #content-area a:visited {
+#content-area a,
+#content-area a:visited {
     color: #83b6e6;
     text-decoration: none;
 }

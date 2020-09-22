@@ -1,0 +1,42 @@
+- little demo text addition
+- prettify code
+- better wood textures for all
+- oh man this shit is much better and less of a headache
+- deleted old sidebar
+- new icons for mobile
+- more tweaks to background
+- different backgrounds, improved sidebar
+- tweaks to the night sidebar
+- testing out a new background
+- left test code in by accident! whoops!
+- fixes to mobile menu layout
+- css for structure and scroll to top icon
+- added mobile menu icons, cleaned up structure a lot
+- added example scroll to top icon
+- fixed layout so it worked like the old theme, without tables or frames
+- fixed footer to bottom and cleaned it up finally
+- BACON
+- remove unneeded padding from title bar links
+- move all changes to index.html and delete landing-page.html
+- ignore all Sublime Text project files
+- added menu and fixed footer, small layout changes
+- more layout updates
+- really getting started on images
+- redid footer styles
+- add test backgrounds
+- remove backgrounds
+- added footer styles
+- added placeholder text
+- added footer div
+- basic structure divs
+- created landing page
+- added style sheet
+- prettify html
+- remove incorrectly named changelog
+- Merge remote-tracking branch 'origin/master'
+- Add CONTRIBUTING
+- created index template
+- update changelog
+- Add CHANGELOG
+- Add LICENSE
+- Initial commit

@@ -20,6 +20,11 @@ footer a {
     color: #83b6e6;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    font-family: Caligula;
+    color: white;
+}
+
 #title-bar {
     font-family: Caligula;
     font-size: medium;
@@ -65,7 +70,7 @@ footer a {
 
 #content-area {
     padding-top: 60px;
-    color: white;
+    color: #C0C0C0;
     padding-bottom: 180px;
 }
 

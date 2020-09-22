@@ -74,6 +74,15 @@ h1,h2,h3,h4,h5,h6 {
     padding-bottom: 180px;
 }
 
+#content-area a, #content-area a:visited {
+    color: #83b6e6;
+    text-decoration: none;
+}
+
+#content-area a:hover {
+    border-bottom: thin dotted #83b6e6;
+}
+
 #scroll-to-top {
     z-index: 100;
     position: fixed;

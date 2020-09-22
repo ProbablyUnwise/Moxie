@@ -47,6 +47,7 @@ h6 {
     font-size: medium;
     background: url(images/bm-title-bar.jpg);
     position: fixed;
+    min-height: 40px;
     top: 0;
     z-index: 99;
 }

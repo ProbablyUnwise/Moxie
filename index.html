@@ -17,19 +17,24 @@
     <header id="title-bar" class="row container-fluid">
         <div class="col text-center"><a href="#">BattleMaster</a> - <a href="#">Wiki</a> - <a href="#">Forums</a> - <a href="#">Bugtracker</a></div>
     </header>
-    <main class="row">
+    <main>
         <!-- hidden on mobile -->
-        <div id="menu-bar" class="d-none d-xl-block col-2">
-            <ul class="list-unstyled">
-                <li><a href="#">Messages (3)</a></li>
-                <li><a href="#">Information</a></li>
-                <li><a href="#">Politics</a></li>
-                <li><a href="#">Travel</a></li>
-                <li><a href="#">Actions</a></li>
-                <li><a href="#">Orders</a></li>
-                <li><a href="#">Infiltrate</a></li>
-                <li><a href="#">Command</a></li>
-            </ul>
+        <div class="row">
+            <div id="menu-bar" class="d-none d-xl-block col-2">
+                <ul class="list-unstyled">
+                    <li><a href="#">Messages (69)</a></li>
+                    <li><a href="#">Information</a></li>
+                    <li><a href="#">Politics</a></li>
+                    <li><a href="#">Travel</a></li>
+                    <li><a href="#">Actions</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Infiltrate</a></li>
+                    <li><a href="#">Command</a></li>
+                </ul>
+            </div>
+            <div id="globe">
+                <img src="images/bm-globe-day.png" alt="daytime">
+            </div>
         </div>
         <div id="content-area" class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
             <div class="row">
@@ -43,7 +48,7 @@
                                     <path d="M311.9 47.95c-17.6 0-34.6.7-50.7 2.43L244.6 93.5l-4.9-40.04c-2.5.46-5 .94-7.5 1.47-9.1 1.94-15.1 7.22-20.3 14.87-5.2 7.65-8.9 17.5-12.1 26.6C191 121.5 184 148 178.4 175c6 5.1 12 10.3 17.9 15.4l30.7-17.6 33.8 26.1 51.9-19.7 61 24.5-6.8 16.7-54.4-21.8-54.7 20.7-32.2-24.9-14.9 8.5c19.6 17.3 38.6 34.4 56.5 51.2l14-6.4 33.9 16.1 31.2-13.1 24.2 23.3-12.4 13-15.8-15.1-27.6 11.7-33-15.8c6.9 6.7 13.6 13.2 20.1 19.7l1.7 1.8 19.5 76.3-7.8-5.7-53 .4-38.1-17.8-42.4 14.6-5.8-17 49.2-17 41.1 19.2 24.7-.2-70.7-51.7c-19.7 4.6-39.4 2.8-58.1-3.7-4.2 44.4-5.9 85.7-7 118.7-.4 10.7 2.7 23 7.5 32.5 4.9 9.5 11.7 15.4 15 16.1 5.2 1.2 19 3.2 37.7 5.1l12.4-39 19.1 41.7c16.7 1.2 35 2 53.5 2.2 28.2.3 57.1-.9 82-4.7 15.8-2.3 29.6-6 40.7-10.4-11.8-5.1-21.6-10.6-29.1-16.6-11.1-8.9-18.2-19.3-17.3-30.9v.2c5.4-96.4 10.8-188.8 30.3-286l.1-.4.1-.4c5.3-17.9 17.9-39.86 36.1-55.83-13.9-2.06-28.6-4-43.7-5.66l-22.3 25.3-2.2-27.7c-19-1.64-38.4-2.71-57.4-2.92h-5.7zm148.5 20.44c-4.7 3.69-9.2 8.03-13.3 12.73 12.1 8.18 21.4 23.38 21.8 36.98.3 7.8-1.9 14.9-7.7 21.4-5.8 6.4-15.6 12.4-31.6 15.8l3.8 17.6c18.6-4 32.3-11.5 41.2-21.4 9-9.9 12.7-22.2 12.3-34-.6-19.3-11.1-37.59-26.5-49.11zM25.44 71.91c-.24 1.61-.38 3.43-.38 5.62.1 7.69 2.03 18.17 5.83 30.17 3.41 10.7 8.27 22.5 14.35 34.8 10.63-5.3 20.59-11 28.41-18.1-4.42 12.5-10.15 24.7-18.6 36.5 4.14 7.2 8.63 14.4 13.45 21.5 10.64-5.3 20.72-13 29.52-26.1-3.3 16-8.47 30.6-18.27 41.8 6.53 8.5 13.5 16.8 20.75 24.5 8.7-9.3 15.6-21 20.7-34.9 3.8 18.5 2.6 35.3-5.7 49.4 8 7.2 16.3 13.7 24.8 19.1 6.1-14 8.9-30.6 8.5-49.7 9.2 23.7 11.3 42.9 9.6 59.5 20.2 9.2 40.8 12 61.3 6.1l4.2-1.3 69.3 50.6-5.9-22.8c-73-72.8-175.4-156.7-261.86-226.69zM312.8 123.9l33.2 13.8 31.3-9.9 5.4 17.2-37.5 11.9-33.6-14-28.8 8.1-4.8-17.4zm107.3 236.2c-.7 0-1.3.1-2 .1-3.5.1-7.2.5-11.1 1.3l3.4 17.6c12.2-2.3 20-.4 24.5 2.5 4.4 2.9 6.3 6.8 6.4 12.5.1 9.3-7 23-23.3 32.5 5.4 2.9 11.9 5.9 19.3 8.7 14.4-11.6 22.1-26.8 22-41.4-.1-10.7-5.2-21.2-14.6-27.4-6.7-4.3-15-6.5-24.6-6.4z" fill="#fff" fill-opacity="1">
                                     </path>
                                 </g>
-                            </svg><br><small>Messages (3)</small>
+                            </svg><br><small>Messages (69)</small>
                         </div>
                         <div class="col-3 text-center">
                             <!-- information -->
@@ -112,8 +117,16 @@
                     <p>This is <strong>Moxie</strong>, my project name for what will eventually be the new theme for <a href="https://battlemaster.org">BattleMaster</a>. Moxie is a responsive, mobile-first theme that will bring the game's UI into the current generation and make the user experiance smoother as a whole, especially for those who like to read their messages throughout the day on their phones! But just because Moxie is mobile-first, doesn't mean that it isn't for desktop users. Moxie will work equally well on both desktop and mobile devices such as tablets and phones, and will adjust herself to fit cleanly on both. Only the UI elements for your current platform will be displayed, so you can always be sure the messages you need to read each turn, and the actions you need to take, will be easy to find and make use of. Moxie is smart like that!</p>
                     <p>You can expect Moxie to be ready sometime in 2021. Until then, feel free to visit here every so often to see the current progress! This is the test server for the theme, so it always shows the latest version I think is ready for public consumption. To see how Moxie works, try visiting this site on your mobile device, or resize your browser window to watch it in action!</p>
                     <h4>And now a little filler text for flavor</h4>
-                    <p>Spicy jalapeno bacon ipsum dolor amet meatball capicola officia, in dolore beef ribs flank. Mollit est beef ribs eu consequat, alcatra culpa tri-tip reprehenderit voluptate chicken flank pastrami. Occaecat alcatra ea, id t-bone magna tail. Veniam corned beef ball tip, tempor ut buffalo proident tri-tip strip steak capicola burgdoggen shank alcatra. Excepteur filet mignon magna pork loin swine, t-bone shankle ham chuck venison ad ut commodo. Brisket sausage pariatur culpa, sint et commodo excepteur kielbasa pork loin filet mignon buffalo leberkas nulla. Nulla labore frankfurter, voluptate swine cupidatat officia.</p>
-                    <p>Cupidatat cillum burgdoggen beef, short ribs pork loin ground round alcatra ham hock salami esse fugiat irure. Buffalo meatball anim occaecat, brisket cupidatat tongue. Non pariatur sed frankfurter turducken ball tip. Cupidatat ea irure ball tip kevin in pastrami commodo. Flank beef et in labore shankle porchetta excepteur sunt non tongue boudin nulla ham. Sausage t-bone ham hock, laborum esse doner ut pork loin prosciutto kevin in pig bacon pork dolore. Labore chuck capicola, bacon commodo spare ribs ground round.</p>
+                    <p>Spicy jalapeno bacon ipsum dolor amet sausage ham pork chop, ball tip hamburger spare ribs turkey swine jowl. Landjaeger jowl ham beef ribs pork belly ham hock pork burgdoggen short loin chuck boudin chislic tongue picanha chicken. Hamburger leberkas shankle frankfurter, swine chuck short loin jerky. Shank andouille venison t-bone chicken, turducken swine jerky pig shankle kielbasa tongue meatball short ribs corned beef. Short loin pork loin biltong capicola leberkas kielbasa tail turkey. Flank boudin alcatra ball tip meatloaf, short ribs tri-tip.</p>
+                    <p>Pastrami tail picanha jerky venison. Chuck tongue rump, beef leberkas ham hock strip steak pig sausage sirloin corned beef chicken chislic venison picanha. Rump short loin brisket, salami kielbasa chuck meatball flank kevin ham hock biltong. Turducken beef ribs jerky, meatball venison kevin hamburger pig jowl drumstick doner short ribs beef pork belly shankle.</p>
+                    <p>Pork chop spare ribs cow boudin landjaeger ground round pork belly tongue meatball. Ground round beef ribs rump short ribs. Ground round boudin cow pork chop t-bone capicola, chislic sausage alcatra. Bresaola shank landjaeger, shankle pork pastrami turducken rump boudin t-bone. Bacon meatball brisket short ribs picanha t-bone shankle ham meatloaf short loin spare ribs ribeye.</p>
+                    <p>Chislic spare ribs alcatra chuck shankle shank tenderloin. Shoulder filet mignon shank prosciutto. Filet mignon bacon turducken tri-tip chuck short loin burgdoggen ribeye meatloaf bresaola pork belly jerky. Ham hock sirloin picanha filet mignon. Kevin shankle doner, venison tenderloin jowl strip steak pork chop boudin short ribs ribeye tail bresaola jerky.</p>
+                    <p>Shankle andouille corned beef, swine brisket short ribs pig cow. Tongue rump turkey capicola landjaeger prosciutto. Ham kielbasa meatloaf sirloin ball tip tenderloin prosciutto salami short loin beef ribs boudin strip steak tri-tip. Biltong pork belly boudin hamburger shankle tongue. Swine rump chislic flank doner. Ground round kevin boudin andouille fatback, bresaola meatball beef ribs beef ham burgdoggen.</p>
+                    <p>Spicy jalapeno bacon ipsum dolor amet sausage ham pork chop, ball tip hamburger spare ribs turkey swine jowl. Landjaeger jowl ham beef ribs pork belly ham hock pork burgdoggen short loin chuck boudin chislic tongue picanha chicken. Hamburger leberkas shankle frankfurter, swine chuck short loin jerky. Shank andouille venison t-bone chicken, turducken swine jerky pig shankle kielbasa tongue meatball short ribs corned beef. Short loin pork loin biltong capicola leberkas kielbasa tail turkey. Flank boudin alcatra ball tip meatloaf, short ribs tri-tip.</p>
+                    <p>Pastrami tail picanha jerky venison. Chuck tongue rump, beef leberkas ham hock strip steak pig sausage sirloin corned beef chicken chislic venison picanha. Rump short loin brisket, salami kielbasa chuck meatball flank kevin ham hock biltong. Turducken beef ribs jerky, meatball venison kevin hamburger pig jowl drumstick doner short ribs beef pork belly shankle.</p>
+                    <p>Pork chop spare ribs cow boudin landjaeger ground round pork belly tongue meatball. Ground round beef ribs rump short ribs. Ground round boudin cow pork chop t-bone capicola, chislic sausage alcatra. Bresaola shank landjaeger, shankle pork pastrami turducken rump boudin t-bone. Bacon meatball brisket short ribs picanha t-bone shankle ham meatloaf short loin spare ribs ribeye.</p>
+                    <p>Chislic spare ribs alcatra chuck shankle shank tenderloin. Shoulder filet mignon shank prosciutto. Filet mignon bacon turducken tri-tip chuck short loin burgdoggen ribeye meatloaf bresaola pork belly jerky. Ham hock sirloin picanha filet mignon. Kevin shankle doner, venison tenderloin jowl strip steak pork chop boudin short ribs ribeye tail bresaola jerky.</p>
+                    <p>Shankle andouille corned beef, swine brisket short ribs pig cow. Tongue rump turkey capicola landjaeger prosciutto. Ham kielbasa meatloaf sirloin ball tip tenderloin prosciutto salami short loin beef ribs boudin strip steak tri-tip. Biltong pork belly boudin hamburger shankle tongue. Swine rump chislic flank doner. Ground round kevin boudin andouille fatback, bresaola meatball beef ribs beef ham burgdoggen.</p>
                 </div>
             </div>
         </div>

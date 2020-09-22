@@ -63,6 +63,7 @@ h6 {
     background-image: url(images/bm-sidebar-night.png);
     background-repeat: no-repeat;
     padding-top: 140px;
+    padding-left: 20px;
     position: fixed;
     left: 0;
     z-index: 100;
@@ -78,6 +79,13 @@ h6 {
     font-family: Caligula;
     list-style: none;
     margin-left: none;
+}
+
+#globe {
+    position: fixed;
+    top: 405px;
+    left: 48px;
+    z-index: 100;
 }
 
 #mobile-menu {

@@ -45,9 +45,9 @@ footer a {
     color: white;
     min-height: 575px;
     min-width: 200px;
-    background-image: url(images/BM-Sidebar-night.png);
+    background-image: url(images/sidebar-night.png);
     background-repeat: no-repeat;
-    padding-top: 130px;
+    padding-top: 125px;
     position: fixed;
     left: 0;
     z-index: 98;
@@ -56,8 +56,8 @@ footer a {
 #menu-bar a {
     color: black;
     font-size: x-large;
-    text-shadow: 0px 1px 1px #4d4d4d;
-    color: #222;
+    text-shadow: 3px 3px 3px #000;
+    color: #f9ba9c;
 }
 
 #menu-bar li {

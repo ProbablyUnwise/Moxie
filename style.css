@@ -4,8 +4,8 @@
 }
 
 html {
-    background-color: black;
-    background: url(images/background2.jpg);
+    background: url(images/bm-stone-wall-1.jpg), url(images/bm-stone-wall.jpg);
+    background-repeat: repeat-x, repeat;
 }
 
 body {
@@ -16,8 +16,7 @@ body {
 
 footer {
     color: white;
-    background-color: black;
-    background: url(images/background2.jpg);
+    background: url(images/bm-stone-wall.jpg);
     border-top: thin solid #181818;
     position: fixed;
     bottom: 0;
@@ -45,19 +44,18 @@ footer a {
     color: white;
     min-height: 575px;
     min-width: 200px;
-    background-image: url(images/sidebar-night.png);
+    background-image: url(images/bm-sidebar-night.png);
     background-repeat: no-repeat;
-    padding-top: 125px;
+    padding-top: 140px;
     position: fixed;
     left: 0;
     z-index: 98;
 }
 
 #menu-bar a {
-    color: black;
-    font-size: x-large;
-    text-shadow: 3px 3px 3px #000;
-    color: #f9ba9c;
+    font-size: 16pt;
+    text-shadow: 2px 2px #000;
+    color: #ffcaa8;
 }
 
 #menu-bar li {
@@ -84,7 +82,6 @@ footer a {
     left: 20px;
     bottom: 100px;
     background-color: black;
-    background: url(images/background2.jpg);
     padding: 5px;
     border: thin solid #808080;
 }

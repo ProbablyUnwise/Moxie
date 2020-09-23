@@ -48,7 +48,6 @@ h6 {
     background: url(images/bm-title-bar.jpg);
     position: fixed;
     min-height: 40px;
-    padding-top: 5px;
     top: 0;
     z-index: 99;
 }
@@ -73,7 +72,7 @@ h6 {
 #menu-bar a {
     font-size: 14pt;
     text-shadow: 2px 2px #000;
-    color: #ffe284;
+    color: #fff;
 }
 
 #menu-bar li {

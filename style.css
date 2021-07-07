@@ -121,3 +121,22 @@ h6 {
     bottom: 100px;
     padding: 5px;
 }
+
+.letter {
+    border-top: thin solid #181818;
+    border-bottom: thin solid #181818;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.letter-to-line {
+    color: #65909A;
+}
+
+.letter-content {
+    padding-left: 20px;
+}
+
+.letter-content::first-letter {
+  font-size: 35px;
+}

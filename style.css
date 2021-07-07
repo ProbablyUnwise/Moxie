@@ -18,6 +18,7 @@
 
 body {
     background: url(images/bm-stone-wall.jpg);
+    font-family: Palatino, "Times New Roman", Times, serif;
 }
 
 footer {
@@ -36,8 +37,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
     font-family: Caligula;
     color: white;
 }
@@ -138,5 +138,9 @@ h6 {
 }
 
 .letter-content::first-letter {
-  font-size: 35px;
+  font-size: 30px;
+  border: thin solid #181818;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-right: 3px;
 }

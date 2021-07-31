@@ -33,15 +33,6 @@ footer a {
     color: #83b6e6;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: Caligula;
-    color: white;
-}
-
 #title-bar {
     font-family: Caligula;
     font-size: medium;
@@ -143,4 +134,12 @@ h5 {
   padding-left: 3px;
   padding-right: 3px;
   margin-right: 3px;
+}
+
+.red {
+    background: rgba(128, 0, 0, 0.25);
+}
+
+.green {
+    background: rgba(0, 100, 0, 0.25);
 }

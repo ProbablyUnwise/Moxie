@@ -137,10 +137,7 @@ footer a {
 
 .letter-content::first-letter {
   font-size: 30px;
-  border: thin solid #181818;
-  padding-left: 3px;
-  padding-right: 3px;
-  margin-right: 3px;
+  padding-left: 6px;
 }
 
 .private {

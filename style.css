@@ -145,3 +145,9 @@ footer a {
 .green {
     background: rgba(0, 100, 0, 0.25);
 }
+
+.border {
+    margin: 1em;
+    border: #fff thick;
+    border-radius: 1em;
+}

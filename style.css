@@ -105,14 +105,7 @@ footer a {
     border-bottom: thin dotted #fff;
 }
 
-#scroll-to-top {
-    z-index: 100;
-    position: fixed;
-    left: 20px;
-    bottom: 100px;
-    padding: 5px;
-}
-
+/* basic layouts for letters */
 .letter {
     border-top: thin solid #181818;
     border-bottom: thin solid #181818;
@@ -130,10 +123,11 @@ footer a {
 }
 
 .letter-content::first-letter {
-  font-size: 30px;
-  padding-left: 6px;
+    font-size: 30px;
+    padding-left: 6px;
 }
 
+/* these are for styling letters */
 .private {
     border-left: white double;
 }
@@ -146,6 +140,7 @@ footer a {
     background: rgba(0, 100, 0, 0.25);
 }
 
+/* add a nice little border to the cards on desktop */
 .border {
     margin: 1em;
     padding: 1em;
@@ -153,10 +148,12 @@ footer a {
     border-radius: 1em;
 }
 
+/* make sure the cards don't have a solid background */
 .card {
     background: url(images/bm-stone-wall.jpg);
 }
 
+/* add a slight margin to the buttons to keep them from mushing together */
 .btn {
     margin: 0.5em;
 }

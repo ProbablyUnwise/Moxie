@@ -73,40 +73,104 @@
                     </div>
                 </div>
             </div>
+
+            <!-- show only on mobile-->
             <div class="row d-xl-none">
-                <div class="col offset-xl-2">
-                    <p>
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMeta"
-                            aria-expanded="false" aria-controls="collapseExample">
-                            Show Userdata
-                        </button>
-                    </p>
+                <div class="col">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-dark" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        Player information & heraldry
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <p><strong>ID: </strong><small>10101</small><br>
+                                            <strong>Name: </strong><small>Juan Ramón Mateo</small><br>
+                                            <strong>Joined: </strong><small>2019-11-08</small><br>
+                                            <strong>Email: </strong><small>probably.unwise@protonmail.ch</small><br>
+                                            <strong>Last Login: </strong><small>2021-10-14 18:13:29 (seconds ago)</small>
+                                        </div>
+                                        <div class="col-sm-2 text-center">
+                                            <img src="images/keswick.svg" alt="Heraldry">
+                                            <button type="button" class="btn btn-secondary"><a href="#">Change heraldry</a></button>
+                                        </div>
+                                        <div class="col-sm-3 text-center">
+                                            <button type="button" class="btn btn-primary"><a href="#">Social Contract</a></button>
+                                            <button type="button" class="btn btn-primary"><a href="#">Recruit a Friend</a></button>
+                                            <button type="button" class="btn btn-primary"><a href="#">Make a Donation</a></button>
+                                            <button type="button" class="btn btn-primary"><a href="#">Follow on Twitter</a></button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <p>This is where the Discord widget would go, if I were to
+                                                bother putting it in for a template.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-dark collapsed" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Player characters
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row in" id="collapseMeta">
-                <div class="col-sm-3 border offset-xl-2">
+
+            <!-- show only on desktop -->
+            <div class="row">
+                <div class="col-2 border offset-2 d-none d-xl-block">
                     <p><strong>User ID:</strong><br>10101</p>
                     <p><strong>Player Name:</strong><br>Juan Ramón Mateo</p>
                     <p><strong>Joined:</strong><br>2019-11-08</p>
                     <p><strong>Email:</strong><br>probably.unwise@protonmail.ch</p>
                     <p><strong>Last Login:</strong><br>2021-10-14 18:13:29<br>(seconds ago)</p>
                 </div>
-                <div class="col-sm-2 border text-center">
+                <div class="col-2 border text-center d-none d-xl-block">
                     <img src="images/keswick.svg" alt="Heraldry"><br><small>Change Heraldry</small>
                 </div>
-                <div class="col-sm-2 border font-weight-bold">
+                <div class="col-2 border font-weight-bold d-none d-xl-block">
                     <p><a href="#">Social Contract</a></p>
                     <p></p><a href="#">Titan Hub</a></p>
                     <p></p><a href="#">Recruit a Friend</a></p>
                     <p></p><a href="#">Make a Donation</a></p>
                     <p></p><a href="#">Follow @_BattleMaster_</a></p>
                 </div>
-                <div class="col-sm-2 border">
+                <div class="col-2 border d-none d-xl-block">
                     <p>This is where the Discord widget would go, if I were to
                         bother putting it in for a template.
                     </p>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col border offset-xl-2 text-center">
                     <p>Would you like to help improve Battlemaster by <a href="#">volunteering</a>?</p>

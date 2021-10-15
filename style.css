@@ -97,12 +97,12 @@ footer a {
 
 #content-area a,
 #content-area a:visited {
-    color: #83b6e6;
+    color: #fff;
     text-decoration: none;
 }
 
 #content-area a:hover {
-    border-bottom: thin dotted #83b6e6;
+    border-bottom: thin dotted #fff;
 }
 
 #scroll-to-top {
@@ -151,4 +151,12 @@ footer a {
     padding: 1em;
     border: #fff thick;
     border-radius: 1em;
+}
+
+.card {
+    background: url(images/bm-stone-wall.jpg);
+}
+
+.btn {
+    margin: 0.5em;
 }

@@ -148,6 +148,7 @@ footer a {
 
 .border {
     margin: 1em;
+    padding: 1em;
     border: #fff thick;
     border-radius: 1em;
 }

@@ -3,19 +3,6 @@
     src: url(fonts/Caligula.ttf);
 }
 
-/* Make the mobile icons blink when needed */
-@keyframes blink {
-
-    100%,
-    0% {
-        fill: #ffcaa8;
-    }
-
-    60% {
-        fill: #ff0000;
-    }
-}
-
 body {
     background: url(images/bm-stone-wall.jpg);
     font-family: Palatino, "Times New Roman", Times, serif;
@@ -85,7 +72,7 @@ footer a {
 #globe {
     position: fixed;
     top: 405px;
-    left: 48px;
+    left: 36px;
     z-index: 100;
 }
 
@@ -98,20 +85,14 @@ footer a {
 #content-area a,
 #content-area a:visited {
     color: #fff;
-    text-decoration: none;
-}
-
-#content-area a:hover {
-    border-bottom: thin dotted #fff;
 }
 
 /* basic layouts for letters */
 .letter {
-    border-top: thin solid #181818;
-    border-bottom: thin solid #181818;
+    border: thin solid #181818;
     border-radius: 8px;
     padding: 20px;
-    margin-top: 30px;
+    margin-bottom: 2em;
 }
 
 .letter-to-line {

@@ -24,10 +24,12 @@ footer a {
     font-family: Caligula;
     font-size: medium;
     background: url(images/bm-title-bar.jpg);
+    background-position: bottom;
     position: fixed;
     min-height: 40px;
     top: 0;
     z-index: 99;
+    padding-bottom: 1em;
 }
 
 #title-bar a {

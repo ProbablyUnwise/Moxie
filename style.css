@@ -65,7 +65,7 @@ footer a {
     font-family: Caligula;
     text-align: center;
     margin-top: 1em;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
 }
 
 #mobile-menu .messages g path {
@@ -92,7 +92,6 @@ footer a {
 
 .menu-icon {
     margin-top: 0.5em;
-    margin-bottom: 0.5em;
 }
 
 /* basic layouts for letters */

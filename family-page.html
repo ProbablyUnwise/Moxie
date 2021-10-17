@@ -45,7 +45,7 @@
                 <!-- hidden on larger screens -->
                 <div id="mobile-menu" class="container-fluid d-xl-none">
                     <div class="row text-center">
-                        <div class="col menu-icon">
+                        <div class="col-2 menu-icon offset-1">
                             <!-- account -->
                             <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-people"
                                 viewBox="0 0 16 16">
@@ -54,7 +54,7 @@
                             </svg>
                             <br><small>Account</small>
                         </div>
-                        <div class="col menu-icon">
+                        <div class="col-2 menu-icon">
                             <!-- edit data -->
                             <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-person-badge"
                                 viewBox="0 0 16 16">
@@ -65,7 +65,7 @@
                             </svg>
                             <br><small>Edit Data</small>
                         </div>
-                        <div class="col menu-icon">
+                        <div class="col-2 menu-icon">
                             <!-- options -->
                             <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-gear" viewBox="0 0 16 16">
                                 <path
@@ -75,9 +75,7 @@
                             </svg>
                             <br><small>Options</small>
                         </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col menu-icon">
+                        <div class="col-2 menu-icon">
                             <!-- wiki -->
                             <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-journal-richtext"
                                 viewBox="0 0 16 16">
@@ -90,7 +88,7 @@
                             </svg>
                             <br><small>Wiki</small>
                         </div>
-                        <div class="col menu-icon">
+                        <div class="col-2 menu-icon">
                             <!-- forums -->
                             <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-chat-left-text"
                                 viewBox="0 0 16 16">
@@ -106,84 +104,78 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- show only on mobile-->
-            <div class="row d-xl-none">
-                <div class="row">
-                    <div class="col">
-                        <hr>
-                        <p><strong>ID: </strong>10101<br>
-                            <strong>Name: </strong>Juan Ramón Mateo<br>
-                            <strong>Joined: </strong>2019-11-08<br>
-                            <strong>Email: </strong>probably.unwise@protonmail.ch<br>
-                            <strong>Last Login: </strong>2021-10-14 18:13:29 (seconds ago)
-                        </p>
-                        <hr>
+                <hr>
+                <!-- show only on mobile-->
+                <div class="row d-xl-none">
+                    <div class="row">
+                        <div class="col">
+                            <p><strong>ID: </strong>10101<br>
+                                <strong>Name: </strong>Juan Ramón Mateo<br>
+                                <strong>Joined: </strong>2019-11-08<br>
+                                <strong>Email: </strong>probably.unwise@protonmail.ch<br>
+                                <strong>Last Login: </strong>2021-10-14 18:13:29 (seconds ago)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <img src="images/keswick.svg" alt="Heraldry"><br>
+                            <button type="button" class="btn btn-dark btn-sm">Change
+                                heraldry</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col d-grid gap-2">
+                            <button type="button" class="btn btn-info"><i class="bi bi-file-text"></i>&nbsp;Social
+                                Contract</button>
+                            <button type="button" class="btn btn-secondary"><i class="bi bi-people"></i>&nbsp;Recruit a
+                                Friend</button>
+                            <button type="button" class="btn btn-secondary"><i class="bi bi-piggy-bank"></i>&nbsp;Make a
+                                Donation</button>
+                            <button type="button" class="btn btn-primary"><i class="bi bi-twitter"></i>&nbsp;Follow on
+                                Twitter
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>This is where the Discord widget would go, if I were to
+                                bother putting it in for a template.
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <hr>
+                <!-- show only on desktop -->
                 <div class="row">
-                    <div class="col text-center">
-                        <img src="images/keswick.svg" alt="Heraldry"><br>
-                        <button type="button" class="btn btn-dark btn-sm">Change
-                            heraldry</button>
+                    <div class="col-2 border offset-2 d-none d-xl-block">
+                        <p><strong>User ID:</strong><br>10101</p>
+                        <p><strong>Player Name:</strong><br>Juan Ramón Mateo</p>
+                        <p><strong>Joined:</strong><br>2019-11-08</p>
+                        <p><strong>Email:</strong><br>probably.unwise@protonmail.ch</p>
+                        <p><strong>Last Login:</strong><br>2021-10-14 18:13:29<br>(seconds ago)</p>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col d-grid gap-2">
-                        <hr>
-                        <button type="button" class="btn btn-info"><i class="bi bi-file-text"></i>&nbsp;Social
-                            Contract</button>
-                        <button type="button" class="btn btn-secondary"><i class="bi bi-people"></i>&nbsp;Recruit a
-                            Friend</button>
-                        <button type="button" class="btn btn-secondary"><i class="bi bi-piggy-bank"></i>&nbsp;Make a
-                            Donation</button>
-                        <button type="button" class="btn btn-primary"><i class="bi bi-twitter"></i>&nbsp;Follow on
-                            Twitter
-                        </button>
+                    <div class="col-2 border text-center d-none d-xl-block">
+                        <img src="images/keswick.svg" alt="Heraldry"><br><small>Change Heraldry</small>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <hr>
+                    <div class="col-2 border font-weight-bold d-none d-xl-block">
+                        <p><a href="#">Social Contract</a></p>
+                        <p><a href="#">Titan Hub</a></p>
+                        <p><a href="#">Recruit a Friend</a></p>
+                        <p><a href="#">Make a Donation</a></p>
+                        <p><a href="#">Follow @_BattleMaster_</a></p>
+                    </div>
+                    <div class="col-2 border d-none d-xl-block">
                         <p>This is where the Discord widget would go, if I were to
                             bother putting it in for a template.
                         </p>
-                        <hr>
                     </div>
                 </div>
-            </div>
-
-            <!-- show only on desktop -->
-            <div class="row">
-                <div class="col-2 border offset-2 d-none d-xl-block">
-                    <p><strong>User ID:</strong><br>10101</p>
-                    <p><strong>Player Name:</strong><br>Juan Ramón Mateo</p>
-                    <p><strong>Joined:</strong><br>2019-11-08</p>
-                    <p><strong>Email:</strong><br>probably.unwise@protonmail.ch</p>
-                    <p><strong>Last Login:</strong><br>2021-10-14 18:13:29<br>(seconds ago)</p>
+                <div class="row">
+                    <div class="col border offset-xl-2 text-center">
+                        <p>Would you like to help improve Battlemaster by <a href="#">volunteering</a>?</p>
+                    </div>
                 </div>
-                <div class="col-2 border text-center d-none d-xl-block">
-                    <img src="images/keswick.svg" alt="Heraldry"><br><small>Change Heraldry</small>
-                </div>
-                <div class="col-2 border font-weight-bold d-none d-xl-block">
-                    <p><a href="#">Social Contract</a></p>
-                    <p><a href="#">Titan Hub</a></p>
-                    <p><a href="#">Recruit a Friend</a></p>
-                    <p><a href="#">Make a Donation</a></p>
-                    <p><a href="#">Follow @_BattleMaster_</a></p>
-                </div>
-                <div class="col-2 border d-none d-xl-block">
-                    <p>This is where the Discord widget would go, if I were to
-                        bother putting it in for a template.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col border offset-xl-2 text-center">
-                    <p>Would you like to help improve Battlemaster by <a href="#">volunteering</a>?</p>
-                </div>
-            </div>
     </main>
     <footer id="footer" class="row container-fluid text-center text-nowrap">
         <!-- nothing here, since it's the family screen -->

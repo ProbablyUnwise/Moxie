@@ -64,6 +64,7 @@ footer a {
 #mobile-menu {
     font-family: Caligula;
     text-align: center;
+    margin-top: 1em;
     margin-bottom: 20px;
 }
 
@@ -87,6 +88,11 @@ footer a {
 #content-area a,
 #content-area a:visited {
     color: #fff;
+}
+
+.menu-icon {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 /* basic layouts for letters */

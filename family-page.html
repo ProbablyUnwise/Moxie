@@ -17,10 +17,12 @@
 
 <body class="container-fluid">
     <header id="title-bar" class="row container-fluid">
-        <div class="col text-center"><span class="align-middle"><a href="#">BattleMaster</a> <img
-                    src="images/bm-rivet.png" alt="spacer"> <a href="#">Wiki</a> <img src="images/bm-rivet.png"
-                    alt="spacer"> <a href="#">Forums</a> <img src="images/bm-rivet.png" alt="spacer"> <a
-                    href="#">Bugtracker</a></span></div>
+        <div class="col text-center">
+            <a href="#">BattleMaster</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">
+            <a href="#">Wiki</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">
+            <a href="#">Forums</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">&nbsp;
+            <a href="#">Bugtracker</a>
+        </div>
     </header>
     <main>
         <!-- hidden on mobile -->
@@ -40,6 +42,37 @@
         </div>
         <div id="content-area" class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
             <div class="row">
+
+                <!-- BEGIN NAVBAR TESTING -->
+
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarText">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">BattleMaster</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Wiki</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Forums</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Bugtracker</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- END NAVBAR TESTING -->
+
                 <!-- hidden on larger screens -->
                 <div id="mobile-menu" class="container-fluid d-xl-none">
                     <div class="row justify-content-center">
@@ -71,91 +104,53 @@
                     </div>
                 </div>
             </div>
+
             <!-- show only on mobile-->
             <div class="row d-xl-none">
-                <div class="col">
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-primary btn-lg" data-toggle="collapse"
-                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <i class="icon-search"></i> Player information & heraldry
-                                    </button>
-                                </h5>
-                            </div>
-
-                            <!-- player information, like ID and heraldry -->
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                data-parent="#accordion">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <hr>
-                                            <p><strong>ID: </strong>10101<br>
-                                                <strong>Name: </strong>Juan Ramón Mateo<br>
-                                                <strong>Joined: </strong>2019-11-08<br>
-                                                <strong>Email: </strong>probably.unwise@protonmail.ch<br>
-                                                <strong>Last Login: </strong>2021-10-14 18:13:29 (seconds ago)
-                                            </p>
-                                            <hr>
-                                        </div>
-                                        <div class="col-sm-2 text-center">
-                                            <img src="images/keswick.svg" alt="Heraldry"><br>
-                                            <a href="#"></a><button type="button" class="btn btn-dark btn-sm">Change
-                                                heraldry</button></a>
-                                            <hr>
-                                        </div>
-                                        <div class="col-sm-3 text-center d-grid">
-                                            <a href="#"></a><button type="button" class="btn btn-info">Social
-                                                Contract</button></a>
-                                            <a href="#"></a><button type="button" class="btn btn-secondary">Recruit a
-                                                Friend</button></a>
-                                            <a href="#"></a><button type="button" class="btn btn-secondary">Make a
-                                                Donation</button></a>
-                                            <a href="#"></a><button type="button" class="btn btn-primary"><i class="bi bi-twitter"></i>&nbsp;Follow on
-                                                Twitter
-                                            </button></a>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <hr>
-                                            <p>This is where the Discord widget would go, if I were to
-                                                bother putting it in for a template.
-                                            </p>
-                                            <hr>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- player character list -->
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-primary btn-lg" data-toggle="collapse"
-                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Player characters
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
-                                data-parent="#accordion">
-                                <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-                                    accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="col">
+                        <hr>
+                        <p><strong>ID: </strong>10101<br>
+                            <strong>Name: </strong>Juan Ramón Mateo<br>
+                            <strong>Joined: </strong>2019-11-08<br>
+                            <strong>Email: </strong>probably.unwise@protonmail.ch<br>
+                            <strong>Last Login: </strong>2021-10-14 18:13:29 (seconds ago)
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <img src="images/keswick.svg" alt="Heraldry"><br>
+                        <button type="button" class="btn btn-dark btn-sm">Change
+                            heraldry</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-grid gap-2">
+                        <hr>
+                        <button type="button" class="btn btn-info"><i class="bi bi-file-text"></i>&nbsp;Social
+                            Contract</button>
+                        <button type="button" class="btn btn-secondary"><i class="bi bi-people"></i>&nbsp;Recruit a
+                            Friend</button>
+                        <button type="button" class="btn btn-secondary"><i class="bi bi-piggy-bank"></i>&nbsp;Make a
+                            Donation</button>
+                        <button type="button" class="btn btn-primary"><i class="bi bi-twitter"></i>&nbsp;Follow on
+                            Twitter
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <hr>
+                        <p>This is where the Discord widget would go, if I were to
+                            bother putting it in for a template.
+                        </p>
+                        <hr>
                     </div>
                 </div>
             </div>
+
             <!-- show only on desktop -->
             <div class="row">
                 <div class="col-2 border offset-2 d-none d-xl-block">
@@ -170,10 +165,10 @@
                 </div>
                 <div class="col-2 border font-weight-bold d-none d-xl-block">
                     <p><a href="#">Social Contract</a></p>
-                    <p></p><a href="#">Titan Hub</a></p>
-                    <p></p><a href="#">Recruit a Friend</a></p>
-                    <p></p><a href="#">Make a Donation</a></p>
-                    <p></p><a href="#">Follow @_BattleMaster_</a></p>
+                    <p><a href="#">Titan Hub</a></p>
+                    <p><a href="#">Recruit a Friend</a></p>
+                    <p><a href="#">Make a Donation</a></p>
+                    <p><a href="#">Follow @_BattleMaster_</a></p>
                 </div>
                 <div class="col-2 border d-none d-xl-block">
                     <p>This is where the Discord widget would go, if I were to
@@ -184,10 +179,8 @@
             <div class="row">
                 <div class="col border offset-xl-2 text-center">
                     <p>Would you like to help improve Battlemaster by <a href="#">volunteering</a>?</p>
-                    </button></a>
                 </div>
             </div>
-        </div>
     </main>
     <footer id="footer" class="row container-fluid text-center text-nowrap">
         <!-- nothing here, since it's the family screen -->

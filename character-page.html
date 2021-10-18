@@ -16,165 +16,123 @@
 </head>
 
 <body class="container-fluid">
+    <!-- header, shown on everything -->
     <header id="title-bar" class="row container-fluid">
         <div class="col text-center">
-            <a href="#">BattleMaster</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">
-            <a href="#">Wiki</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">
-            <a href="#">Forums</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">&nbsp;
-            <a href="#">Bugtracker</a>
+            <a href="#" class="link-light">BattleMaster</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">
+            <a href="#" class="link-light">Wiki</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">
+            <a href="#" class="link-light">Forums</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">&nbsp;
+            <a href="#" class="link-light">Bugtracker</a>
         </div>
     </header>
-    <main>
-        <!-- hidden on mobile -->
+    <nav>
+        <!-- sidebar nav, hidden on mobile -->
         <div class="row">
             <div id="menu-bar" class="d-none d-xl-block col-2">
-                <ul class="list-unstyled">
-                    <li><a href="#">Messages (69)</a></li>
-                    <li><a href="#">Information</a></li>
-                    <li><a href="#">Politics</a></li>
-                    <li><a href="#">Travel</a></li>
-                    <li><a href="#">Actions</a></li>
-                    <li><a href="#">Orders</a></li>
-                    <li><a href="#">Infiltrate</a></li>
-                    <li><a href="#">Command</a></li>
-                </ul>
+                <nav class="navbar">
+                    <ul class="nav flex-column fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link active link-light" aria-current="page" href="#">Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="#">Edit Data</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="#">Options</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light">Wiki</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light">Forums</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+
             <div id="globe" class="d-none d-xl-block">
                 <img src="images/bm-globe-day.png" alt="daytime">
             </div>
         </div>
-        <div id="content-area" class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
-            <div class="row">
-                <!-- hidden on larger screens -->
-                <div id="mobile-menu" class="container-fluid d-xl-none">
-                    <div class="row justify-content-center">
-                        <div class="col text-center">
-                            <!-- messages -->
-                            <img src="images/menu/messages.svg" alt="Messages"><br><small>Messages (69)</small>
-                        </div>
-                        <div class="col text-center">
-                            <!-- information -->
-                            <img src="images/menu/information.svg" alt="Information"><br><small>Information</small>
-                        </div>
-                        <div class="col text-center">
-                            <!-- politics -->
-                            <img src="images/menu/politics.svg" alt="Politics"><br><small>Politics</small>
-                        </div>
-                        <div class="col text-center">
-                            <!-- travel -->
-                            <img src="images/menu/travel.svg" alt="Travel"><br><small>Travel</small>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col text-center">
-                            <!-- actions -->
-                            <img src="images/menu/actions.svg" alt="Actions"><br><small>Actions</small>
-                        </div>
-                        <div class="col text-center">
-                            <!-- orders -->
-                            <img src="images/menu/orders.svg" alt="Orders"><br><small>Orders</small>
-                        </div>
-                        <div class="col text-center">
-                            <!-- infiltrate -->
-                            <img src="images/menu/infiltrate.svg" alt="Infiltrate"><br><small>Infiltrate</small>
-                        </div>
-                        <div class="col text-center">
-                            <!-- command -->
-                            <img src="images/menu/command.svg" alt="Command"><br><small>Command</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-xl-10 offset-xl-2">
+
+        <!-- icon nav, hidden on larger screens -->
+        <div class="row">
+            <div id="mobile-menu" class="container-fluid d-xl-none">
+                <div class="row mt-5 pt-4 justify-content-center text-white">
+                    <!-- account -->
                     <div class="col">
-                        <h1>What fresh hell is this?!</h1>
-                        <p>This is <strong>Moxie</strong>, my project name for what will eventually be the new theme for
-                            <a href="https://battlemaster.org">BattleMaster</a>. Moxie is a responsive, mobile-first
-                            theme that will bring the game's UI into the current generation and make the user experiance
-                            smoother as a whole, especially for those who like to read their messages throughout the day
-                            on their phones! But just because Moxie is mobile-first, doesn't mean that it isn't for
-                            desktop users. Moxie will work equally well on both desktop and mobile devices such as
-                            tablets and phones, and will adjust herself to fit cleanly on both. Only the UI elements for
-                            your current platform will be displayed, so you can always be sure the messages you need to
-                            read each turn, and the actions you need to take, will be easy to find and make use of.
-                            Moxie is smart like that!</p>
-                        <p>You can expect Moxie to be ready sometime in 2021. Until then, feel free to visit here every
-                            so often to see the current progress! This is the test server for the theme, so it always
-                            shows the latest version I think is ready for public consumption. To see how Moxie works,
-                            try visiting this site on your mobile device, or resize your browser window to watch it in
-                            action!</p>
-                        <h4>Typography and stuff</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-people" viewBox="0 0 16 16">
+                            <path
+                                d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+                        </svg>
+                        <br><small>Account</small>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col letter col-xl-10 offset-xl-2">
-                    <h3 class="letter-from-line">Letter from Leander Keswick</h3>
-                    <h6 class="letter-to-line">Message sent to all nobles of Tol Goldora - 21 hours, 25 minutes ago</h6>
-                    <p class="letter-content">Bacon ipsum dolor amet landjaeger pork cupim, ham hock leberkas strip
-                        steak andouille picanha bresaola chuck ground round ham turducken. Leberkas buffalo ham hock
-                        swine. Corned beef spare ribs venison, tongue capicola sausage bacon strip steak short ribs ham
-                        chicken kielbasa short loin. Pastrami boudin jerky biltong shank pork porchetta fatback brisket.
-                        Drumstick picanha flank, sausage capicola pastrami bresaola chuck chicken meatloaf ribeye.
-                        Leberkas beef filet mignon tenderloin jowl tongue.</p>
-                    <div class="row">
-                        <div class="col-xl-1 col-sm-4">
-                            <img src="images/keswick.svg" alt="" width="80px" height="80px">
-                        </div>
-                        <div class="col-xl-11 col-sm-6">
-                            <p class="letter-signature-line">Leander Keswick<br>Viscount of Lavendrow</p>
-                        </div>
+                    <!-- edit data -->
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-person-badge"
+                            viewBox="0 0 16 16">
+                            <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path
+                                d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z" />
+                        </svg>
+                        <br><small>Edit Data</small>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col red private letter col-xl-10 offset-xl-2">
-                    <h3 class="letter-from-line">Orders from Leander Keswick</h3>
-                    <h6 class="letter-to-line">(Personal message) - 21 hours, 25 minutes ago</h6>
-                    <p class="letter-content">Bacon ipsum dolor amet landjaeger pork cupim, ham hock leberkas strip
-                        steak andouille picanha bresaola chuck ground round ham turducken. Leberkas buffalo ham hock
-                        swine. Corned beef spare ribs venison, tongue capicola sausage bacon strip steak short ribs ham
-                        chicken kielbasa short loin. Pastrami boudin jerky biltong shank pork porchetta fatback brisket.
-                        Drumstick picanha flank, sausage capicola pastrami bresaola chuck chicken meatloaf ribeye.
-                        Leberkas beef filet mignon tenderloin jowl tongue.</p>
-                    <div class="row">
-                        <div class="col-xl-1 col-sm-4">
-                            <img src="images/keswick.svg" alt="" width="80px" height="80px">
-                        </div>
-                        <div class="col-xl-11 col-sm-6">
-                            <p class="letter-signature-line">Leander Keswick<br>Viscount of Lavendrow</p>
-                        </div>
+                    <!-- options -->
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-gear" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                            <path
+                                d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                        </svg>
+                        <br><small>Options</small>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col green letter col-xl-10 offset-xl-2">
-                    <h3 class="letter-from-line">Request from Leander Keswick</h3>
-                    <h6 class="letter-to-line">Message sent to all nobles of Tol Goldora - 21 hours, 25 minutes ago</h6>
-                    <p class="letter-content">Bacon ipsum dolor amet landjaeger pork cupim, ham hock leberkas strip
-                        steak andouille picanha bresaola chuck ground round ham turducken. Leberkas buffalo ham hock
-                        swine. Corned beef spare ribs venison, tongue capicola sausage bacon strip steak short ribs ham
-                        chicken kielbasa short loin. Pastrami boudin jerky biltong shank pork porchetta fatback brisket.
-                        Drumstick picanha flank, sausage capicola pastrami bresaola chuck chicken meatloaf ribeye.
-                        Leberkas beef filet mignon tenderloin jowl tongue.</p>
-                    <div class="row">
-                        <div class="col-xl-1 col-sm-4">
-                            <img src="images/keswick.svg" alt="" width="80px" height="80px">
-                        </div>
-                        <div class="col-xl-11 col-sm-6">
-                            <p class="letter-signature-line">Leander Keswick<br>Viscount of Lavendrow</p>
-                        </div>
+                    <!-- wiki -->
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-journal-richtext"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M7.5 3.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+                            <path
+                                d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
+                            <path
+                                d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
+                        </svg>
+                        <br><small>Wiki</small>
+                    </div>
+                    <!-- forums -->
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-chat-left-text"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                            <path
+                                d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                        <br><small>Forums</small>
                     </div>
                 </div>
             </div>
         </div>
+    </nav>
+
+    <main>
+        <div id="content-area" class="offset-xl-2 mt-xl-5">
+
+
+
+
+
+
+
+
+
         </div>
     </main>
     <footer id="footer" class="row container-fluid text-center text-nowrap">
-        <div class="col order-xl-1"><a href="#">Leander</a><br>12 hours / 69 gold</div>
-        <div class="col order-xl-3"><a href="#">Keswick House Guard</a><br />[1 D L] 420 men, Archers</div>
-        <div class="col order-xl-2"><a href="#">Golden Farrow</a></div>
+        <div class="col order-xl-1"><a href="#" class="link-light">Leander</a><br><span class="text-info">12 hours / 69 gold</span></div>
+        <div class="col order-xl-3"><a href="#" class="link-light">Keswick House Guard</a><br /><span class="text-info">[1 D L] 420 men, Archers</span></div>
+        <div class="col order-xl-2"><a href="#" class="link-light">Golden Farrow</a></div>
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

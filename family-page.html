@@ -107,16 +107,16 @@
         <div id="content-area" class="offset-xl-2 mt-xl-5">
 
             <!-- player information accordion -->
-            <div class="accordion accordion-flush" id="accordionExample">
+            <div class="accordion accordion-flush" id="accordionPlayer">
                 <div class="accordion-item bg-transparent">
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Player Information and Heraldry
+                            Player Information (click to close)
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
+                        data-bs-parent="#accordionPlayer">
                         <div class="accordion-body">
                             <!-- player information -->
                             <div class="row container pb-3">
@@ -203,113 +203,128 @@
                 </div>
             </div>
 
-            <!-- character cards -->
-            <div class="row row-cols-1 row-cols-md-3 g-4 pt-3 justify-content-center text-light">
-                <!-- this one is for an active noble -->
-                <div class="col-sm-2">
-                    <div class="card h-100 bg-warning bg-gradient bg-opacity-25">
-                        <div class="card-header">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                class="bi bi-inbox-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm-1.17-.437A1.5 1.5 0 0 1 4.98 3h6.04a1.5 1.5 0 0 1 1.17.563l3.7 4.625a.5.5 0 0 1 .106.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
-                            </svg>&nbsp;<span class="lead">2 Messages</span>
-                        </div>
-                        <div class="card-body text-center">
-                            <h2 class="card-title">Finlay</h2>
-                            <h6 class="card-subtitle mb-2 text-muted">Warrior/Hero</h6>
-                            <h6>East Continent ~ Yssrgard</h6>
-                            <p class="card-text">2 new / 8 hrs<br>
-                                <a href="#" class="btn btn-link link-light">Play</a>&nbsp;/&nbsp;
-                                <a href="#" class="btn btn-link link-light">Quickplay</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- another active noble -->
-                <div class="col-sm-2">
-                    <div class="card h-100 bg-warning bg-opacity-10">
-                        <div class="card-header">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="grey"
-                                class="bi bi-inbox" viewBox="0 0 16 16">
-                                <path
-                                    d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
-                            </svg>
-                        </div>
-                        <div class="card-body text-center">
-                            <h2 class="card-title">Leander</h2>
-                            <h6 class="card-subtitle mb-2 text-muted">Courtier/Infiltrator</h6>
-                            <h6>Dwilight ~ Tol Goldora</h6>
-                            <p class="card-text">1 new / 12 hrs<br>
-                                <a href="#" class="btn btn-link link-light">Play</a>&nbsp;/&nbsp;
-                                <a href="#" class="btn btn-link link-light">Quickplay</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- this one is for an active adventurer -->
-                <div class="col-sm-2">
-                    <div class="card h-100 bg-warning bg-gradient bg-opacity-25">
-                        <div class="card-header">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                class="bi bi-inbox-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm-1.17-.437A1.5 1.5 0 0 1 4.98 3h6.04a1.5 1.5 0 0 1 1.17.563l3.7 4.625a.5.5 0 0 1 .106.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
-                            </svg>&nbsp;<span class="lead">29 Messages</span>
-                        </div>
-                        <div class="card-body text-center">
-                            <h2 class="card-title">Hamlin</h2>
-                            <h6 class="card-subtitle mb-2 text-muted">Adventurer</h6>
-                            <h6>Dwilight ~ Tol Goldora</h6>
-                            <p class="card-text">29 new / 16 hrs, 0 fatigue<br>
-                                <a href="#" class="btn btn-link link-light">Play</a>&nbsp;/&nbsp;
-                                <a href="#" class="btn btn-link link-light">Quickplay</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- this one is for a paused noble -->
-                <div class="col-sm-2">
-                    <div class="card h-100 bg-secondary bg-gradient bg-opacity-25">
-                        <div class="card-header">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="grey"
-                                class="bi bi-inbox" viewBox="0 0 16 16">
-                                <path
-                                    d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
-                            </svg>
-                        </div>
-                        <div class="card-body text-center">
-                            <h2 class="card-title">Eurwen</h2>
-                            <h6 class="card-subtitle mb-2 text-muted">Warrior</h6>
-                            <h6>Colonies ~ Outer Tilog</h6>
-                            <p class="card-text">
-                                <a href="#" class="btn btn-link link-light">Unpause</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- this one is for a paused adventurer -->
-                <div class="col-sm-2">
-                    <div class="card h-100 bg-secondary bg-gradient bg-opacity-25">
-                        <div class="card-header">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="grey"
-                                class="bi bi-inbox" viewBox="0 0 16 16">
-                                <path
-                                    d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
-                            </svg>
-                        </div>
-                        <div class="card-body text-center">
-                            <h2 class="card-title">Dinah</h2>
-                            <h6 class="card-subtitle mb-2 text-muted">Adventurer</h6>
-                            <h6>Beluaterra ~ Obia'Syela</h6>
-                            <p class="card-text">
-                                <a href="#" class="btn btn-link link-light">Unpause</a>
-                            </p>
+            <!-- player characters accordion -->
+            <div class="accordion accordion-flush" id="accordionCharacter">
+                <div class="accordion-item bg-transparent">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            Player Characters (click to close)
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionCharacter">
+                        <div class="accordion-body">
+                            <!-- character cards -->
+                            <div class="row row-cols-1 row-cols-md-3 g-4 pt-3 justify-content-center text-light">
+                                <!-- this one is for an active noble -->
+                                <div class="col-sm-2">
+                                    <div class="card h-100 bg-warning bg-gradient bg-opacity-25">
+                                        <div class="card-header">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                fill="currentColor" class="bi bi-inbox-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm-1.17-.437A1.5 1.5 0 0 1 4.98 3h6.04a1.5 1.5 0 0 1 1.17.563l3.7 4.625a.5.5 0 0 1 .106.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
+                                            </svg>&nbsp;<span class="lead">2 Messages</span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h2 class="card-title">Finlay</h2>
+                                            <h6 class="card-subtitle mb-2 text-muted">Warrior/Hero</h6>
+                                            <h6>East Continent ~ Yssrgard</h6>
+                                            <p class="card-text">2 new / 8 hrs<br>
+                                                <a href="#" class="btn btn-link link-light">Play</a>&nbsp;/&nbsp;
+                                                <a href="#" class="btn btn-link link-light">Quickplay</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- another active noble -->
+                                <div class="col-sm-2">
+                                    <div class="card h-100 bg-warning bg-opacity-10">
+                                        <div class="card-header">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="grey"
+                                                class="bi bi-inbox" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
+                                            </svg>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h2 class="card-title">Leander</h2>
+                                            <h6 class="card-subtitle mb-2 text-muted">Courtier/Infiltrator</h6>
+                                            <h6>Dwilight ~ Tol Goldora</h6>
+                                            <p class="card-text">1 new / 12 hrs<br>
+                                                <a href="#" class="btn btn-link link-light">Play</a>&nbsp;/&nbsp;
+                                                <a href="#" class="btn btn-link link-light">Quickplay</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- this one is for an active adventurer -->
+                                <div class="col-sm-2">
+                                    <div class="card h-100 bg-warning bg-gradient bg-opacity-25">
+                                        <div class="card-header">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                fill="currentColor" class="bi bi-inbox-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm-1.17-.437A1.5 1.5 0 0 1 4.98 3h6.04a1.5 1.5 0 0 1 1.17.563l3.7 4.625a.5.5 0 0 1 .106.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
+                                            </svg>&nbsp;<span class="lead">29 Messages</span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h2 class="card-title">Hamlin</h2>
+                                            <h6 class="card-subtitle mb-2 text-muted">Adventurer</h6>
+                                            <h6>Dwilight ~ Tol Goldora</h6>
+                                            <p class="card-text">29 new / 16 hrs, 0 fatigue<br>
+                                                <a href="#" class="btn btn-link link-light">Play</a>&nbsp;/&nbsp;
+                                                <a href="#" class="btn btn-link link-light">Quickplay</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- this one is for a paused noble -->
+                                <div class="col-sm-2">
+                                    <div class="card h-100 bg-secondary bg-gradient bg-opacity-25">
+                                        <div class="card-header">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="grey"
+                                                class="bi bi-inbox" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
+                                            </svg>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h2 class="card-title">Eurwen</h2>
+                                            <h6 class="card-subtitle mb-2 text-muted">Warrior</h6>
+                                            <h6>Colonies ~ Outer Tilog</h6>
+                                            <p class="card-text">
+                                                <a href="#" class="btn btn-link link-light">Unpause</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- this one is for a paused adventurer -->
+                                <div class="col-sm-2">
+                                    <div class="card h-100 bg-secondary bg-gradient bg-opacity-25">
+                                        <div class="card-header">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="grey"
+                                                class="bi bi-inbox" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
+                                            </svg>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h2 class="card-title">Dinah</h2>
+                                            <h6 class="card-subtitle mb-2 text-muted">Adventurer</h6>
+                                            <h6>Beluaterra ~ Obia'Syela</h6>
+                                            <p class="card-text">
+                                                <a href="#" class="btn btn-link link-light">Unpause</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </main>
 

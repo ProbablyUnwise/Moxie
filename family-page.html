@@ -16,27 +16,40 @@
 </head>
 
 <body class="container-fluid">
-    <!-- header nav, shown on everything -->
+    <!-- header, shown on everything -->
     <header id="title-bar" class="row container-fluid">
         <div class="col text-center">
-            <a href="#">BattleMaster</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">
-            <a href="#">Wiki</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">
-            <a href="#">Forums</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">&nbsp;
-            <a href="#">Bugtracker</a>
+            <a href="#" class="link-light">BattleMaster</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">
+            <a href="#" class="link-light">Wiki</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">
+            <a href="#" class="link-light">Forums</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">&nbsp;
+            <a href="#" class="link-light">Bugtracker</a>
         </div>
     </header>
     <nav>
         <!-- sidebar nav, hidden on mobile -->
         <div class="row">
             <div id="menu-bar" class="d-none d-xl-block col-2">
-                <ul class="list-unstyled">
-                    <li><a href="#">Account</a></li>
-                    <li><a href="#">Edit Data</a></li>
-                    <li><a href="#">Options</a></li>
-                    <li><a href="#">Wiki</a></li>
-                    <li><a href="#">Forums</a></li>
-                </ul>
+                <nav class="navbar">
+                    <ul class="nav flex-column fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link active link-light" aria-current="page" href="#">Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="#">Edit Data</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="#">Options</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light">Wiki</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light">Forums</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+
             <div id="globe" class="d-none d-xl-block">
                 <img src="images/bm-globe-day.png" alt="daytime">
             </div>
@@ -110,9 +123,9 @@
             <div class="accordion accordion-flush" id="accordionPlayer">
                 <div class="accordion-item bg-transparent">
                     <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse"
+                        <button class="accordion-button bg-transparent text-white" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Player Information (click to close)
+                            Player Information (click to minimize)
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
@@ -138,7 +151,7 @@
                                         <div class="card-body">
                                             <p class="card-text">
                                                 <img src="images/keswick.svg" alt="Heraldry"><br>
-                                                <button type="button" class="btn btn-dark btn-sm">Change
+                                                <button type="button" class="btn btn-dark btn-sm my-2">Change
                                                     heraldry</button>
                                             </p>
                                         </div>
@@ -146,7 +159,7 @@
                                     <!-- social buttons -->
                                     <div class="card text-white text-center bg-transparent">
                                         <div class="card-body">
-                                            <p class="card-text">
+                                            <p class="card-text d-grid gap-2">
                                                 <button type="button" class="btn btn-info"><i
                                                         class="bi bi-file-text"></i>&nbsp;Social
                                                     Contract</button><br>
@@ -207,9 +220,9 @@
             <div class="accordion accordion-flush" id="accordionCharacter">
                 <div class="accordion-item bg-transparent">
                     <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse"
+                        <button class="accordion-button bg-transparent text-white" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                            Player Characters (click to close)
+                            Player Characters (click to minimize)
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"

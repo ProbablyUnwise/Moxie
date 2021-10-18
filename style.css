@@ -9,15 +9,8 @@ body {
 }
 
 footer {
-    color: white;
-    background: url(images/bm-stone-wall.jpg);
-    border-top: thin solid #181818;
     position: fixed;
     bottom: 0;
-}
-
-footer a {
-    color: #83b6e6;
 }
 
 #title-bar {
@@ -32,12 +25,7 @@ footer a {
     padding-bottom: 1em;
 }
 
-#title-bar a {
-    color: white;
-}
-
 #menu-bar {
-    color: white;
     min-height: 575px;
     min-width: 200px;
     background-image: url(images/bm-menu.png);
@@ -49,27 +37,15 @@ footer a {
     z-index: 100;
 }
 
-#menu-bar a {
-    font-size: 14pt;
-    text-shadow: 2px 2px #000;
-    color: #fff;
-}
-
 #menu-bar li {
     font-family: Caligula;
-    list-style: none;
-    margin-left: none;
+    text-shadow: 2px 2px #000;
 }
 
 #mobile-menu {
     font-family: Caligula;
-    text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
-}
-
-#mobile-menu .messages g path {
-    animation: blink 0.8s infinite;
 }
 
 #globe {
@@ -82,51 +58,4 @@ footer a {
 #content-area {
     color: #C0C0C0;
     padding-bottom: 180px;
-}
-
-/* basic layouts for letters */
-.letter {
-    border: thin solid #181818;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 2em;
-}
-
-.letter-to-line {
-    color: #65909A;
-}
-
-.letter-content {
-    padding-left: 20px;
-}
-
-.letter-content::first-letter {
-    font-size: 30px;
-    padding-left: 6px;
-}
-
-/* these are for styling letters */
-.private {
-    border-left: white double;
-}
-
-.red {
-    background: rgba(128, 0, 0, 0.25);
-}
-
-.green {
-    background: rgba(0, 100, 0, 0.25);
-}
-
-/* add a nice little border to the cards on desktop */
-.border {
-    margin: 1em;
-    padding: 1em;
-    border: #fff thick;
-    border-radius: 1em;
-}
-
-/* add a slight margin to the buttons to keep them from mushing together */
-.btn {
-    margin: 0.5em;
 }

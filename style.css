@@ -80,18 +80,8 @@ footer a {
 }
 
 #content-area {
-    padding-top: 60px;
     color: #C0C0C0;
     padding-bottom: 180px;
-}
-
-#content-area a,
-#content-area a:visited {
-    color: #fff;
-}
-
-.menu-icon {
-    margin-top: 0.5em;
 }
 
 /* basic layouts for letters */
@@ -134,11 +124,6 @@ footer a {
     padding: 1em;
     border: #fff thick;
     border-radius: 1em;
-}
-
-/* make sure the cards don't have a solid background */
-.card {
-    background: url(images/bm-stone-wall.jpg);
 }
 
 /* add a slight margin to the buttons to keep them from mushing together */

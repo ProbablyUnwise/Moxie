@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,42 +17,17 @@
 
 <body class="container-fluid">
     <!-- header, shown on everything -->
-    <header id="title-bar" class="row container-fluid">
-        <div class="col text-center">
-            <a href="#" class="btn btn-link link-light">BattleMaster</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">
-            <a href="#" class="btn btn-link link-light">Wiki</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">
-            <a href="#" class="btn btn-link link-light">Forums</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">&nbsp;
+    <header id="title-bar" class="row container-fluid align-items-center">
+        <div class="col"><img src="images/bm-rivet.png" alt="spacer"></div>
+        <div class="col-9 text-center">
+            <a href="#" class="btn btn-link link-light">BattleMaster</a>
+            <a href="#" class="btn btn-link link-light">Wiki</a>
+            <a href="#" class="btn btn-link link-light">Forums</a>
             <a href="#" class="btn btn-link link-light">Bugtracker</a>
         </div>
+        <div class="col text-end"><img src="images/bm-rivet.png" alt="spacer"></div>
     </header>
     <nav>
-        <!-- sidebar nav, hidden on mobile -->
-        <div class="row">
-            <div id="menu-bar" class="d-none d-xl-block col-2">
-                <nav class="navbar">
-                    <ul class="nav flex-column fw-bold">
-                        <li class="nav-item">
-                            <a class="nav-link active link-light" aria-current="page" href="#">Account</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-light" href="#">Edit Data</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-light" href="#">Options</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-light">Wiki</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-light">Forums</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="globe" class="d-none d-xl-block">
-                <img src="images/bm-globe-night.png" alt="daytime">
-            </div>
-        </div>
         <!-- icon nav, hidden on larger screens -->
         <div class="row">
             <div id="mobile-menu" class="container-fluid d-xl-none">
@@ -59,40 +35,52 @@
                     <!-- account -->
                     <div class="col">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-people" viewBox="0 0 16 16">
-                            <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+                            <path
+                                d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
                         </svg>
                         <br><small>Account</small>
                     </div>
                     <!-- edit data -->
                     <div class="col">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-person-badge" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-person-badge"
+                            viewBox="0 0 16 16">
                             <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                            <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z" />
+                            <path
+                                d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z" />
                         </svg>
                         <br><small>Edit Data</small>
                     </div>
                     <!-- options -->
                     <div class="col">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-gear" viewBox="0 0 16 16">
-                            <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
-                            <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                            <path
+                                d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                            <path
+                                d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
                         </svg>
                         <br><small>Options</small>
                     </div>
                     <!-- wiki -->
                     <div class="col">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-journal-richtext" viewBox="0 0 16 16">
-                            <path d="M7.5 3.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
-                            <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
-                            <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-journal-richtext"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M7.5 3.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+                            <path
+                                d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
+                            <path
+                                d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
                         </svg>
                         <br><small>Wiki</small>
                     </div>
                     <!-- forums -->
                     <div class="col">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-chat-left-text" viewBox="0 0 16 16">
-                            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                            <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-chat-left-text"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                            <path
+                                d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
                         </svg>
                         <br><small>Forums</small>
                     </div>
@@ -101,212 +89,278 @@
         </div>
     </nav>
     <main>
-        <div id="content-area" class="offset-xl-2 mt-xl-5">
-            <!-- player information accordion -->
-            <div class="accordion accordion-flush" id="accordionPlayer">
-                <div class="accordion-item bg-transparent">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Player Information (click to minimize)
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionPlayer">
-                        <div class="accordion-body">
-                            <!-- player information -->
-                            <div class="row container pb-3">
-                                <div class="card-group">
-                                    <!-- user id -->
-                                    <div class="card text-white bg-transparent">
-                                        <div class="card-body">
-                                            <p class="card-text">
-                                                <strong>ID: </strong>10101<br>
-                                                <strong>Name: </strong>Juan Ramón Mateo<br>
-                                                <strong>Joined: </strong>2019-11-08<br>
-                                                <strong>Email: </strong>probably.unwise@protonmail.ch<br>
-                                                <strong>Last Login: </strong>2021-10-14 18:13:29 (seconds ago)
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- heraldry -->
-                                    <div class="card text-white text-center bg-transparent">
-                                        <div class="card-body">
-                                            <p class="card-text">
-                                                <img src="images/keswick.svg" alt="Heraldry"><br>
-                                                <button type="button" class="btn btn-dark btn-sm my-2">Change
-                                                    heraldry</button>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- social buttons -->
-                                    <div class="card text-white text-center bg-transparent">
-                                        <div class="card-body">
-                                            <p class="card-text d-grid gap-2">
-                                                <button type="button" class="btn btn-info"><i class="bi bi-file-text"></i>&nbsp;Social
-                                                    Contract</button><br>
-                                                <button type="button" class="btn btn-secondary"><i class="bi bi-people"></i>&nbsp;Recruit a
-                                                    Friend</button><br>
-                                                <button type="button" class="btn btn-secondary"><i class="bi bi-piggy-bank"></i>&nbsp;Make a
-                                                    Donation</button><br>
-                                                <button type="button" class="btn btn-primary"><i class="bi bi-twitter"></i>&nbsp;Follow
-                                                    us on
-                                                    Twitter</button>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- discord -->
-                                    <div class="card text-white bg-transparent">
-                                        <div class="card-body">
-                                            <p class="card-text">This is where the Discord widget would go, if I were to
-                                                bother putting it in for a template.</p>
+        <div id="content-area" class="mt-xl-5">
+            <div class="row">
+                <div class="col-2">
+                    <!-- sidebar nav, hidden on mobile -->
+                    <div class="row">
+                        <div id="menu-bar" class="d-none d-xl-block col-2">
+                            <nav class="navbar">
+                                <ul class="nav flex-column fw-bold">
+                                    <li class="nav-item">
+                                        <a class="nav-link active link-light" aria-current="page" href="#">Account</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link link-light" href="#">Edit Data</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link link-light" href="#">Options</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link link-light">Wiki</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link link-light">Forums</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div id="globe" class="d-none d-xl-block">
+                            <img src="images/bm-globe-night.png" alt="daytime">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- BEGIN PAGE CONTENT HERE -->
+
+                    <!-- player information accordion -->
+                    <div class="accordion accordion-flush" id="accordionPlayer">
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-transparent text-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Player Information (click to minimize)
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionPlayer">
+                                <div class="accordion-body">
+                                    <!-- player information -->
+                                    <div class="row container pb-3">
+                                        <div class="card-group">
+                                            <!-- user id -->
+                                            <div class="card text-white bg-transparent">
+                                                <div class="card-body">
+                                                    <p class="card-text">
+                                                        <strong>ID: </strong>10101<br>
+                                                        <strong>Name: </strong>Juan Ramón Mateo<br>
+                                                        <strong>Joined: </strong>2019-11-08<br>
+                                                        <strong>Email: </strong>probably.unwise@protonmail.ch<br>
+                                                        <strong>Last Login: </strong>2021-10-14 18:13:29 (seconds ago)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- heraldry -->
+                                            <div class="card text-white text-center bg-transparent">
+                                                <div class="card-body">
+                                                    <p class="card-text">
+                                                        <img src="images/keswick.svg" alt="Heraldry"><br>
+                                                        <button type="button" class="btn btn-dark btn-sm my-2">Change
+                                                            heraldry</button>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- social buttons -->
+                                            <div class="card text-white text-center bg-transparent">
+                                                <div class="card-body">
+                                                    <p class="card-text d-grid gap-2">
+                                                        <button type="button" class="btn btn-info"><i
+                                                                class="bi bi-file-text"></i>&nbsp;Social
+                                                            Contract</button><br>
+                                                        <button type="button" class="btn btn-secondary"><i
+                                                                class="bi bi-people"></i>&nbsp;Recruit a
+                                                            Friend</button><br>
+                                                        <button type="button" class="btn btn-secondary"><i
+                                                                class="bi bi-piggy-bank"></i>&nbsp;Make a
+                                                            Donation</button><br>
+                                                        <button type="button" class="btn btn-primary"><i
+                                                                class="bi bi-twitter"></i>&nbsp;Follow
+                                                            us on
+                                                            Twitter</button>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- discord -->
+                                            <div class="card text-white bg-transparent">
+                                                <div class="card-body">
+                                                    <p class="card-text">This is where the Discord widget would go, if I
+                                                        were to
+                                                        bother putting it in for a template.</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- help us, become a dev! -->
-            <div class="row border-bottom py-4">
-                <div class="col-sm-4 offset-xl-4 text-center">
-                    <div class="alert alert-info" role="alert">
-                        Would you like to help improve Battlemaster by <a href="#">volunteering</a>?
-                    </div>
-                </div>
-            </div>
-            <div class="row py-1 text-white">
-                <div class="col-sm-8 offset-sm-2 text-center">
-                    <div class="card bg-transparent">
-                        <div class="card-body">
-                            <h1 class="display-1">The Keswick Family</h1>
-                            <p class="card-text">
-                                Home Region: Via on Dwilight ♦ Fame: 11 ♦ Wealth: 3495 gold<br>
-                                5 / 9 characters ~ 3 / 7 active ~ 2 / 4 active nobles<br>
-                                <a href="#"><small>help on character limits</small></a>
-                            </p>
-                            <a href="#" class="btn btn-primary btn-sm btn-dark">New Noble</a>
-                            <a href="#" class="btn btn-primary btn-sm btn-dark">New Adventurer</a>
+                    <!-- help us, become a dev! -->
+                    <div class="row border-bottom py-4">
+                        <div class="col-sm-4 offset-xl-4 text-center">
+                            <div class="alert alert-info" role="alert">
+                                Would you like to help improve Battlemaster by <a href="#">volunteering</a>?
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- player characters accordion -->
-            <div class="accordion accordion-flush" id="accordionCharacter">
-                <div class="accordion-item bg-transparent">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                            Player Characters (click to minimize)
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionCharacter">
-                        <div class="accordion-body">
-                            <!-- character cards -->
-                            <div class="row row-cols-1 row-cols-md-3 g-4 pt-3 justify-content-center text-light">
-                                <!-- this one is for an active noble -->
-                                <div class="col-sm-2">
-                                    <div class="card h-100 bg-warning bg-gradient bg-opacity-25">
-                                        <div class="card-header">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-inbox-fill" viewBox="0 0 16 16">
-                                                <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm-1.17-.437A1.5 1.5 0 0 1 4.98 3h6.04a1.5 1.5 0 0 1 1.17.563l3.7 4.625a.5.5 0 0 1 .106.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
-                                            </svg>&nbsp;<span class="lead">2 Messages</span>
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <h2 class="card-title">Finlay</h2>
-                                            <h6 class="card-subtitle mb-2 text-muted">Warrior/Hero</h6>
-                                            <h6>East Continent ~ Yssrgard</h6>
-                                            <p class="card-text">2 new / 8 hrs<br>
-                                                <a href="#" class="btn btn-link link-light">Play</a>&nbsp;/&nbsp;
-                                                <a href="#" class="btn btn-link link-light">Quickplay</a>
-                                            </p>
-                                        </div>
-                                    </div>
+                    <div class="row py-1 text-white">
+                        <div class="col-sm-8 offset-sm-2 text-center">
+                            <div class="card bg-transparent">
+                                <div class="card-body">
+                                    <h1 class="display-1">The Keswick Family</h1>
+                                    <p class="card-text">
+                                        Home Region: Via on Dwilight ♦ Fame: 11 ♦ Wealth: 3495 gold<br>
+                                        5 / 9 characters ~ 3 / 7 active ~ 2 / 4 active nobles<br>
+                                        <a href="#"><small>help on character limits</small></a>
+                                    </p>
+                                    <a href="#" class="btn btn-primary btn-sm btn-dark">New Noble</a>
+                                    <a href="#" class="btn btn-primary btn-sm btn-dark">New Adventurer</a>
                                 </div>
-                                <!-- another active noble -->
-                                <div class="col-sm-2">
-                                    <div class="card h-100 bg-warning bg-opacity-10">
-                                        <div class="card-header">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="grey" class="bi bi-inbox" viewBox="0 0 16 16">
-                                                <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
-                                            </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- player characters accordion -->
+                    <div class="accordion accordion-flush" id="accordionCharacter">
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button bg-transparent text-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                    aria-controls="collapseTwo">
+                                    Player Characters (click to minimize)
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionCharacter">
+                                <div class="accordion-body">
+                                    <!-- character cards -->
+                                    <div
+                                        class="row row-cols-1 row-cols-md-3 g-4 pt-3 justify-content-center text-light">
+                                        <!-- this one is for an active noble -->
+                                        <div class="col-sm-2">
+                                            <div class="card h-100 bg-warning bg-gradient bg-opacity-25">
+                                                <div class="card-header">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                        fill="currentColor" class="bi bi-inbox-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm-1.17-.437A1.5 1.5 0 0 1 4.98 3h6.04a1.5 1.5 0 0 1 1.17.563l3.7 4.625a.5.5 0 0 1 .106.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
+                                                    </svg>&nbsp;<span class="lead">2 Messages</span>
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h2 class="card-title">Finlay</h2>
+                                                    <h6 class="card-subtitle mb-2 text-muted">Warrior/Hero</h6>
+                                                    <h6>East Continent ~ Yssrgard</h6>
+                                                    <p class="card-text">2 new / 8 hrs<br>
+                                                        <a href="#"
+                                                            class="btn btn-link link-light">Play</a>&nbsp;/&nbsp;
+                                                        <a href="#" class="btn btn-link link-light">Quickplay</a>
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="card-body text-center">
-                                            <h2 class="card-title">Leander</h2>
-                                            <h6 class="card-subtitle mb-2 text-muted">Courtier/Infiltrator</h6>
-                                            <h6>Dwilight ~ Tol Goldora</h6>
-                                            <p class="card-text">1 new / 12 hrs<br>
-                                                <a href="#" class="btn btn-link link-light">Play</a>&nbsp;/&nbsp;
-                                                <a href="#" class="btn btn-link link-light">Quickplay</a>
-                                            </p>
+                                        <!-- another active noble -->
+                                        <div class="col-sm-2">
+                                            <div class="card h-100 bg-warning bg-opacity-10">
+                                                <div class="card-header">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                        fill="grey" class="bi bi-inbox" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
+                                                    </svg>
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h2 class="card-title">Leander</h2>
+                                                    <h6 class="card-subtitle mb-2 text-muted">Courtier/Infiltrator</h6>
+                                                    <h6>Dwilight ~ Tol Goldora</h6>
+                                                    <p class="card-text">1 new / 12 hrs<br>
+                                                        <a href="#"
+                                                            class="btn btn-link link-light">Play</a>&nbsp;/&nbsp;
+                                                        <a href="#" class="btn btn-link link-light">Quickplay</a>
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <!-- this one is for an active adventurer -->
-                                <div class="col-sm-2">
-                                    <div class="card h-100 bg-warning bg-gradient bg-opacity-25">
-                                        <div class="card-header">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-inbox-fill" viewBox="0 0 16 16">
-                                                <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm-1.17-.437A1.5 1.5 0 0 1 4.98 3h6.04a1.5 1.5 0 0 1 1.17.563l3.7 4.625a.5.5 0 0 1 .106.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
-                                            </svg>&nbsp;<span class="lead">29 Messages</span>
+                                        <!-- this one is for an active adventurer -->
+                                        <div class="col-sm-2">
+                                            <div class="card h-100 bg-warning bg-gradient bg-opacity-25">
+                                                <div class="card-header">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                        fill="currentColor" class="bi bi-inbox-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm-1.17-.437A1.5 1.5 0 0 1 4.98 3h6.04a1.5 1.5 0 0 1 1.17.563l3.7 4.625a.5.5 0 0 1 .106.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
+                                                    </svg>&nbsp;<span class="lead">29 Messages</span>
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h2 class="card-title">Hamlin</h2>
+                                                    <h6 class="card-subtitle mb-2 text-muted">Adventurer</h6>
+                                                    <h6>Dwilight ~ Tol Goldora</h6>
+                                                    <p class="card-text">29 new / 16 hrs, 0 fatigue<br>
+                                                        <a href="#"
+                                                            class="btn btn-link link-light">Play</a>&nbsp;/&nbsp;
+                                                        <a href="#" class="btn btn-link link-light">Quickplay</a>
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="card-body text-center">
-                                            <h2 class="card-title">Hamlin</h2>
-                                            <h6 class="card-subtitle mb-2 text-muted">Adventurer</h6>
-                                            <h6>Dwilight ~ Tol Goldora</h6>
-                                            <p class="card-text">29 new / 16 hrs, 0 fatigue<br>
-                                                <a href="#" class="btn btn-link link-light">Play</a>&nbsp;/&nbsp;
-                                                <a href="#" class="btn btn-link link-light">Quickplay</a>
-                                            </p>
+                                        <!-- this one is for a paused noble -->
+                                        <div class="col-sm-2">
+                                            <div class="card h-100 bg-secondary bg-gradient bg-opacity-25">
+                                                <div class="card-header">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                        fill="grey" class="bi bi-inbox" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
+                                                    </svg>
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h2 class="card-title">Eurwen</h2>
+                                                    <h6 class="card-subtitle mb-2 text-muted">Warrior</h6>
+                                                    <h6>Colonies ~ Outer Tilog</h6>
+                                                    <p class="card-text">
+                                                        <a href="#" class="btn btn-link link-light">Unpause</a>
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <!-- this one is for a paused noble -->
-                                <div class="col-sm-2">
-                                    <div class="card h-100 bg-secondary bg-gradient bg-opacity-25">
-                                        <div class="card-header">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="grey" class="bi bi-inbox" viewBox="0 0 16 16">
-                                                <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
-                                            </svg>
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <h2 class="card-title">Eurwen</h2>
-                                            <h6 class="card-subtitle mb-2 text-muted">Warrior</h6>
-                                            <h6>Colonies ~ Outer Tilog</h6>
-                                            <p class="card-text">
-                                                <a href="#" class="btn btn-link link-light">Unpause</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- this one is for a paused adventurer -->
-                                <div class="col-sm-2">
-                                    <div class="card h-100 bg-secondary bg-gradient bg-opacity-25">
-                                        <div class="card-header">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="grey" class="bi bi-inbox" viewBox="0 0 16 16">
-                                                <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
-                                            </svg>
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <h2 class="card-title">Dinah</h2>
-                                            <h6 class="card-subtitle mb-2 text-muted">Adventurer</h6>
-                                            <h6>Beluaterra ~ Obia'Syela</h6>
-                                            <p class="card-text">
-                                                <a href="#" class="btn btn-link link-light">Unpause</a>
-                                            </p>
+                                        <!-- this one is for a paused adventurer -->
+                                        <div class="col-sm-2">
+                                            <div class="card h-100 bg-secondary bg-gradient bg-opacity-25">
+                                                <div class="card-header">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                        fill="grey" class="bi bi-inbox" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
+                                                    </svg>
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h2 class="card-title">Dinah</h2>
+                                                    <h6 class="card-subtitle mb-2 text-muted">Adventurer</h6>
+                                                    <h6>Beluaterra ~ Obia'Syela</h6>
+                                                    <p class="card-text">
+                                                        <a href="#" class="btn btn-link link-light">Unpause</a>
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- END PAGE CONTENT HERE -->
                 </div>
             </div>
         </div>
     </main>
-    <footer id="footer" class="row container-fluid text-center text-nowrap">
+    <footer id="footer" class="container-fluid">
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
         </script>
     </footer>
 </body>

@@ -17,44 +17,17 @@
 
 <body class="container-fluid">
     <!-- header, shown on everything -->
-    <header id="title-bar" class="row container-fluid">
-        <div class="col text-center">
-            <a href="#" class="link-light">BattleMaster</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">
-            <a href="#" class="link-light">Wiki</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">
-            <a href="#" class="link-light">Forums</a>&nbsp;<img src="images/bm-rivet.png" alt="spacer">&nbsp;
-            <a href="#" class="link-light">Bugtracker</a>
+    <header id="title-bar" class="row container-fluid align-items-center">
+        <div class="col"><img src="images/bm-rivet.png" alt="spacer"></div>
+        <div class="col-9 text-center">
+            <a href="#" class="btn btn-link link-light">BattleMaster</a>
+            <a href="#" class="btn btn-link link-light">Wiki</a>
+            <a href="#" class="btn btn-link link-light">Forums</a>
+            <a href="#" class="btn btn-link link-light">Bugtracker</a>
         </div>
+        <div class="col text-end"><img src="images/bm-rivet.png" alt="spacer"></div>
     </header>
     <nav>
-        <!-- sidebar nav, hidden on mobile -->
-        <div class="row">
-            <div id="menu-bar" class="d-none d-xl-block col-2">
-                <nav class="navbar">
-                    <ul class="nav flex-column fw-bold">
-                        <li class="nav-item">
-                            <a class="nav-link active link-light" aria-current="page" href="#">Account</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-light" href="#">Edit Data</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-light" href="#">Options</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-light">Wiki</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-light">Forums</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div id="globe" class="d-none d-xl-block">
-                <img src="images/bm-globe-day.png" alt="daytime">
-            </div>
-        </div>
-
         <!-- icon nav, hidden on larger screens -->
         <div class="row">
             <div id="mobile-menu" class="container-fluid d-xl-none">
@@ -115,32 +88,63 @@
             </div>
         </div>
     </nav>
-
     <main>
-        <div id="content-area" class="offset-xl-2 mt-xl-5">
+        <div id="content-area" class="mt-xl-5">
+            <div class="row">
+                <div class="col-2">
+                    <!-- sidebar nav, hidden on mobile -->
+                    <div class="row">
+                        <div id="menu-bar" class="d-none d-xl-block col-2">
+                            <nav class="navbar">
+                                <ul class="nav flex-column fw-bold">
+                                    <li class="nav-item">
+                                        <a class="nav-link active link-light" aria-current="page" href="#">Account</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link link-light" href="#">Edit Data</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link link-light" href="#">Options</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link link-light">Wiki</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link link-light">Forums</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div id="globe" class="d-none d-xl-block">
+                            <img src="images/bm-globe-night.png" alt="daytime">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- BEGIN PAGE CONTENT HERE -->
 
 
-
-
-
-
-
-
-
+                    <!-- END PAGE CONTENT HERE -->
+                </div>
+            </div>
         </div>
     </main>
-    <footer id="footer" class="row container-fluid text-center text-nowrap">
-        <div class="col order-xl-1"><a href="#" class="link-light">Leander</a><br><span class="text-info">12 hours / 69 gold</span></div>
-        <div class="col order-xl-3"><a href="#" class="link-light">Keswick House Guard</a><br /><span class="text-info">[1 D L] 420 men, Archers</span></div>
-        <div class="col order-xl-2"><a href="#" class="link-light">Golden Farrow</a></div>
+    <footer id="footer" class="container-fluid">
+        <div class="row text-center text-nowrap">
+            <div class="col"><a href="#" class="link-light">Leander</a><br><span class="text-info">12 hours / 69
+                    gold</span></div>
+            <div class="col order-xl-1"><a href="#" class="link-light">Golden Farrow</a></div>
+            <div class="col order-xl-2"><a href="#" class="link-light">Keswick House Guard</a><br /><span
+                    class="text-info">[1 D L] 420 men, Archers</span></div>
+        </div>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
     </footer>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
 </body>
 
 </html>

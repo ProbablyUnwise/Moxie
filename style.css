@@ -21,6 +21,7 @@ footer {
     padding-bottom: 1em;
     max-height: 80px;
     top: 0;
+    z-index: 100;
 }
 
 #menu-bar {

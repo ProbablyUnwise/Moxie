@@ -10,7 +10,7 @@
       <li>&nbsp;</li><!-- blank li for ending rivet -->
     </ul>
   </div>
-  <div class="grid grid-cols-2 gap-4"><!-- split rest of page into two col -->
+  <div class="grid grid-cols-2"><!-- split rest of page into two col -->
     <div class="sidebar">
       <!-- side menubar -->
       <div class="menu">

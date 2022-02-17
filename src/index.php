@@ -1,44 +1,22 @@
-<?php include "header.php"; ?>
-
-  <div class="titlebar">
-    <!-- top titlebar -->
-    <ul class="flex">
-      <li>Battlemaster</li>
-      <li>Wiki</li>
-      <li>Forums</li>
-      <li>Bugtracker</li>
-      <li>&nbsp;</li><!-- blank li for ending rivet -->
-    </ul>
-  </div>
-  <div class="grid grid-cols-2"><!-- split rest of page into two col -->
-    <div class="sidebar">
-      <!-- side menubar -->
-      <div class="menu">
-        <ul>
-          <li>Messages</li>
-          <li>Information</li>
-          <li>Politics</li>
-          <li>Travel</li>
-          <li>Actions</li>
-          <li>Orders</li>
-          <li>Command</li>
-        </ul>
+<?php
+include "header.php"; 
+include "sidebar.php";
+?>
+    <header>
+      <div class="header">
+        <h1>Article Title</h1>
       </div>
-      <div class="panel">
-        <!-- menu panel -->
-        <a href="#"><img src="../src/parts/img/bm-menu-top.png" alt="menu panel"></a>
-      </div>
-      <div class="globe">
-        <!-- day/night globe -->
-        <a href="#"><img src="../src/parts/img/bm-menu-bottom-day.png" alt="globe day"></a>
-      </div>
-    </div>
-    <div class="content">
-      <!-- main page content -->
+    </header>
+    <article>
       <div class="message">
-        <p>Testing</p>
+        <p>Bacon ipsum dolor amet doner chuck venison, pastrami ground round sirloin beef pork flank beef ribs tail pork
+          belly. Boudin salami pork loin pig kielbasa, short loin chicken corned beef. Turducken pork pork loin turkey
+          picanha chislic, tri-tip short ribs ball tip. Kielbasa drumstick shoulder beef ribs leberkas corned beef
+          landjaeger pork belly rump flank chislic prosciutto pancetta pork. T-bone meatball pork loin sausage kevin
+          hamburger drumstick flank ribeye chuck shank corned beef capicola buffalo. Meatball short loin ground round
+          beef
+          ribs, ribeye turkey pancetta flank.
+        </p>
       </div>
-    </div>
-  </div>
-
+    </article>
 <?php include "footer.php"; ?>

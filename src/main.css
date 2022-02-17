@@ -22,19 +22,19 @@ body {
 }
 
 .sidebar {
-    @apply invisible sm:visible fixed top-0;
+    @apply hidden sm:inline fixed top-0;
 }
 
 .menu {
-    @apply invisible sm:visible z-10 absolute mt-36 ml-4;
+    @apply hidden sm:inline z-10 absolute mt-36 ml-4;
 }
 
 .panel {
-    @apply invisible sm:visible z-0;
+    @apply hidden sm:inline z-0;
 }
 
 .globe {
-    @apply invisible sm:visible z-0;
+    @apply hidden sm:inline z-0;
 }
 
 .content {

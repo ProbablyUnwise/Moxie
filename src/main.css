@@ -9,7 +9,7 @@ body {
 
 .titlebar {
     background-image: url("../src/parts/img/bm-title-bar.jpg");
-    @apply bg-bottom flex flex-row justify-center items-center sm:font-bold sm:text-lg text-xs;
+    @apply bg-bottom flex flex-row justify-center items-center py-1 font-bold sm:text-lg text-xs;
 }
 
 .titlebar ul {
@@ -22,7 +22,7 @@ body {
 }
 
 .sidebar {
-    @apply hidden sm:inline fixed top-0;
+    @apply hidden sm:inline fixed top-2;
 }
 
 .menu {
@@ -39,4 +39,20 @@ body {
 
 .content {
     @apply sm:ml-52 mt-6;
+}
+
+#player div {
+    @apply pb-8;
+}
+
+#player h1 {
+    @apply font-bold text-center;
+}
+
+#player p {
+    @apply flex flex-col justify-center items-center;
+}
+
+#player button {
+    @apply rounded-md m-2 sm:m-1 w-11/12 sm:w-auto py-2 px-8 shadow-lg;
 }

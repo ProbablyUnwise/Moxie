@@ -2,21 +2,50 @@
 include "header.php"; 
 include "sidebar.php";
 ?>
-    <header>
-      <div class="header">
-        <h1>Article Title</h1>
-      </div>
-    </header>
-    <article>
-      <div class="message">
-        <p>Bacon ipsum dolor amet doner chuck venison, pastrami ground round sirloin beef pork flank beef ribs tail pork
-          belly. Boudin salami pork loin pig kielbasa, short loin chicken corned beef. Turducken pork pork loin turkey
-          picanha chislic, tri-tip short ribs ball tip. Kielbasa drumstick shoulder beef ribs leberkas corned beef
-          landjaeger pork belly rump flank chislic prosciutto pancetta pork. T-bone meatball pork loin sausage kevin
-          hamburger drumstick flank ribeye chuck shank corned beef capicola buffalo. Meatball short loin ground round
-          beef
-          ribs, ribeye turkey pancetta flank.
-        </p>
-      </div>
-    </article>
+
+<div id="player" class="grid grid-cols-1 sm:grid-cols-4 px-4">
+  <div><!-- first -->
+    <h1>
+      Player Information
+    </h1>
+    <p>
+      <ul class="list-none">
+        <li><strong>ID: </strong>10101</li>
+        <li><strong>Name: </strong>Juan Ramón Mateo</li>
+        <li><strong>Joined: </strong>2019-11-08</li>
+        <li><strong>Email: </strong>probably.unwise@protonmail.ch</li>
+        <li><strong>Last Login: </strong>2021-10-14 18:13:29 (seconds ago)</li>
+      </ul>
+    </p>
+  </div>
+  <div><!-- second -->
+    <h1>
+      Family Heraldry
+    </h1>
+    <p>
+      <img src="parts/img/keswick.svg" alt="Heraldry">
+      <button class="bg-slate-800 shadow-slate-800/50">Change Heraldry</button>
+    </p>
+  </div>
+  <div><!-- third -->
+    <h1>
+      Awesome Buttons to Click
+    </h1>
+    <p>
+    <button class="bg-green-500 shadow-green-800/50">Social Contract</button>
+    <button class="bg-gray-800 shadow-gray-800/50">Recruit A Friend</button>
+    <button class="bg-yellow-500 shadow-yellow-800/50">Make A Donation</button>
+    <button class="bg-cyan-500 shadow-cyan-500/50">Follow Us On Twitter</button>
+    </p>
+  </div>
+  <div><!-- fifth -->
+    <h1>
+      Non-existant Discord Widget
+    </h1>
+    <p>
+      There's not anything to see here.
+    </p>
+  </div>
+</div>
+
 <?php include "footer.php"; ?>

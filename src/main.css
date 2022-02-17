@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-image: url("../src/parts/img/bm-stone-wall.jpg");
+    @apply text-white m-0 p-0;
+}
+
+.titlebar {
+    background-image: url("../src/parts/img/bm-title-bar.jpg");
+    @apply bg-bottom flex flex-row justify-center items-center sm:font-bold sm:text-lg text-xs;
+}
+
+.titlebar ul {
+    list-style-image: url("../src/parts/img/bm-rivet.png");
+    @apply list-inside;
+}
+
+.titlebar li {
+    @apply px-1 pb-4;
+}
+
+.sidebar {
+    @apply invisible sm:visible fixed top-0;
+}
+
+.menu {
+    @apply invisible sm:visible z-10 absolute mt-36 ml-4;
+}
+
+.panel {
+    @apply invisible sm:visible z-0;
+}
+
+.globe {
+    @apply invisible sm:visible z-0;
+}
+
+.content {
+    @apply sm:ml-52 mt-6;
+}

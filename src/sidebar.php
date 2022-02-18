@@ -1,4 +1,4 @@
-<div class="titlebar">
+<div id="titlebar">
     <!-- top titlebar -->
     <ul class="flex">
         <li>Battlemaster</li>
@@ -8,11 +8,11 @@
         <li>&nbsp;</li><!-- blank li for ending rivet -->
     </ul>
 </div>
-<div class="grid grid-cols-2">
+<div id="pagemenus">
     <!-- split rest of page into two col -->
-    <div class="sidebar">
-        <!-- sidebar menu -->
-        <div class="menu">
+    <div id="pcmenu">
+        <!-- sidebar menu for pcs -->
+        <div id="menu">
             <ul>
                 <li>Messages</li>
                 <li>Information</li>
@@ -23,17 +23,17 @@
                 <li>Command</li>
             </ul>
         </div>
-        <div class="panel">
+        <div id="panel">
             <!-- sidebar background -->
             <a href="#"><img src="../src/parts/img/bm-menu-top.png" alt="menu panel"></a>
         </div>
-        <div class="globe">
+        <div id="globe">
             <!-- day/night globe -->
             <a href="index.php"><img src="../src/parts/img/bm-menu-bottom-day.png" alt="globe day"></a>
         </div>
     </div>
 
-    <div class="col-span-2 grid grid-cols-5 gap-2 my-4 mx-2 sm:hidden text-center">
+    <div id="mobilemenu">
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-people" viewBox="0 0 16 16">
                 <path
@@ -80,5 +80,5 @@
         </div>
     </div>
 
-    <div class="content col-span-2">
+    <div id="pagecontent">
         <!-- main page content -->

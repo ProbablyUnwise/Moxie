@@ -3,7 +3,7 @@ include "header.php";
 include "sidebar.php";
 ?>
 
-<div id="player" class="grid grid-cols-1 sm:grid-cols-4 px-4">
+<div id="playerinformation">
   <div><!-- first -->
     <h1>
       Player Information

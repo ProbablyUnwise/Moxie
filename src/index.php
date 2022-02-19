@@ -32,10 +32,10 @@ include "sidebar.php";
       Awesome Buttons to Click
     </h1>
     <p>
-    <button class="bg-green-500 shadow-green-800/50">Social Contract</button>
-    <button class="bg-gray-800 shadow-gray-800/50">Recruit A Friend</button>
-    <button class="bg-yellow-500 shadow-yellow-800/50">Make A Donation</button>
-    <button class="bg-cyan-500 shadow-cyan-500/50">Follow Us On Twitter</button>
+    <button class="bg-green-500 shadow-green-800/50 shadow-lg">Social Contract</button>
+    <button class="bg-gray-800 shadow-gray-800/50 shadow-lg">Recruit A Friend</button>
+    <button class="bg-yellow-500 shadow-yellow-800/50 shadow-lg">Make A Donation</button>
+    <button class="bg-cyan-500 shadow-cyan-500/50 shadow-lg">Follow Us On Twitter</button>
     </p>
   </div>
   <div><!-- fifth -->

@@ -66,9 +66,37 @@ body {
 }
 
 #playerinformation button {
-    @apply rounded-md m-2 lg:m-1 w-11/12 lg:w-auto py-2 px-8;
+    @apply rounded-md m-2 lg:m-1 w-11/12 lg:w-1/2 py-2 px-8;
 }
 
 #characterinformation {
-    @apply grid grid-cols-1 lg:grid-cols-4 px-4;
+    @apply grid grid-cols-1 lg:grid-cols-4 gap-8 pb-2 lg:mr-12;
+}
+
+#characterinformation .charactercard {
+    background-image: url("../src/parts/img/lace.png");
+}
+
+#characterinformation .charactercard button {
+    @apply m-1 p-2 w-5/12 rounded border-white border-2;
+}
+
+#characterinformation h1 {
+    @apply font-bold text-3xl;
+}
+
+#characterinformation h6 {
+    @apply italic text-sm mb-3;
+}
+
+#characterinformation .activecharactercard {
+    @apply bg-gradient-to-b from-amber-500/95 to-amber-800/90 border-4 border-amber-600 shadow-amber-600/50 shadow-lg rounded h-full flex flex-col justify-center align-middle text-center;
+}
+
+#characterinformation .pausedcharactercard {
+    @apply bg-gradient-to-b from-slate-400/95 to-slate-700/90 border-4 border-slate-600 shadow-slate-600/50 shadow-lg rounded h-full flex flex-col justify-center align-middle text-center;
+}
+
+#charactercard .cardbuttons {
+    @apply flex flex-col;
 }

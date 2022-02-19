@@ -9,7 +9,7 @@ body {
 
 #titlebar {
     background-image: url("../src/parts/img/bm-title-bar.jpg");
-    @apply bg-bottom flex flex-row justify-center items-center py-1 font-bold lg:text-lg text-xs;
+    @apply bg-bottom lg:fixed flex flex-row justify-center items-center w-screen py-1 font-bold lg:text-lg text-xs;
 }
 
 #titlebar ul {
@@ -46,7 +46,7 @@ body {
 }
 
 #pagecontent {
-    @apply lg:ml-52 mt-6 col-span-2;
+    @apply lg:ml-52 lg:mt-14 col-span-2;
 }
 
 #playerinformation {

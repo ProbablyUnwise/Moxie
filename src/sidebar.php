@@ -79,6 +79,7 @@
             <small>Forums</small>
         </div>
     </div>
+</div>
 
     <div id="pagecontent">
         <!-- main page content -->

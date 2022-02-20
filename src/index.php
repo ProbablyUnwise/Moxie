@@ -47,10 +47,18 @@ include "sidebar.php";
       Non-existant Discord Widget
     </h1>
     <p>
-      There's not anything to see here.
+      There's nothing to see here.
       <!-- there should be SOMETHING to see here -->
     </p>
   </div>
+</div>
+
+<div class="flex flex-col justify-center items-center my-8">
+  <!-- family name and info -->
+  <h1 class="lg:text-5xl font-bold">The Keswick Family</h1>
+  <p class="text-center">Home Region: Via on Dwilight ♦ Fame: 15 ♦ Wealth: 4655 gold<br />
+    7 / 10 characters ~ 5 / 7 active ~ 4 / 4 active nobles
+  </p>
 </div>
 
 <div id="characterinformation">
@@ -61,47 +69,71 @@ include "sidebar.php";
       <h1>Leander</h1>
       <h6>Warrior/Infiltrator</h6>
       <p>Dwilight ~ Tol Goldora</p>
-      <p class="py-4">7 hours</p>
+      <p class="lg:py-4 font-bold">7 hours</p>
       <p class="italic">travelling</p>
       <div class="cardbuttons">
-      <button class="bg-amber-500 py-4">Play</button>
-      <button class="bg-amber-500 py-4">Pause</button>
+        <button class="bg-yellow-500 py-4">Quickplay</button>
+        <button class="bg-yellow-500 py-4">Play</button>
       </div>
+      <p class="my-1 text-xs italic underline">
+        <a href="#" class="">Pause</a>
+      </p>
     </div>
   </div>
 
   <div class="charactercard">
-    <div class="activecharactercard">
+    <div class="activecharactercarddark">
       <!-- active character -->
       <h1>Eurwen</h1>
       <h6>Courtier</h6>
-      <p>Colonies ~ Outer Tilo</p>
-      <p class="py-8">12 hours</p>
+      <p>Colonies ~ Outer Tilog</p>
+      <p class="lg:py-4 font-bold">12 hours</p>
       <p class="italic">ok</p>
+      <div class="cardbuttons">
+        <button class="bg-yellow-800 py-4">Quickplay</button>
+        <button class="bg-yellow-800 py-4">Play</button>
+      </div>
+      <p class="my-1 text-xs italic underline">
+        <a href="#" class="">Pause</a>
+      </p>
     </div>
   </div>
 
   <div class="charactercard">
     <div class="pausedcharactercard">
-      <!-- active character -->
+      <!-- paused character -->
       <h1>Armin</h1>
       <h6>Adventurer</h6>
       <p>East Continent ~ Yssrgard</p>
-      <p class="py-8">&nbsp;</p>
+      <p class="lg:py-4 font-bold">&nbsp;</p>
       <p class="italic">&nbsp;</p>
+      <div class="cardbuttons">
+        <button class="bg-neutral-500 py-4">Quickplay</button>
+        <button class="bg-neutral-500 py-4">Play</button>
+      </div>
+      <p class="my-1 text-xs italic underline">
+        <a href="#" class="">Unpause</a>
+      </p>
     </div>
   </div>
 
-<div class="charactercard">
-  <div class="pausedcharactercard">
-    <!-- active character -->
-    <h1>Dinah</h1>
-    <h6>Adventurer</h6>
-    <p>Beluaterra ~ Irondale</p>
-    <p class="py-8">&nbsp;</p>
-    <p class="italic">&nbsp;</p>
+  <div class="charactercard">
+    <div class="pausedcharactercarddark">
+      <!-- paused character -->
+      <h1>Dinah</h1>
+      <h6>Adventurer</h6>
+      <p>Beluaterra ~ Irondale</p>
+      <p class="lg:py-4 font-bold">&nbsp;</p>
+      <p class="italic">&nbsp;</p>
+      <div class="cardbuttons">
+        <button class="bg-neutral-600 py-4">Quickplay</button>
+        <button class="bg-neutral-600 py-4">Play</button>
+      </div>
+      <p class="my-1 text-xs italic underline">
+        <a href="#" class="">Unpause</a>
+      </p>
+    </div>
   </div>
-</div>
 </div>
 
 

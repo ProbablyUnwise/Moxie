@@ -46,7 +46,7 @@ body {
 }
 
 #pagecontent {
-    @apply lg:ml-52 lg:mt-14 col-span-2;
+    @apply lg:ml-52 lg:mt-24 col-span-2;
 }
 
 #playerinformation {
@@ -78,7 +78,7 @@ body {
 }
 
 #characterinformation .charactercard button {
-    @apply m-1 p-2 w-5/12 rounded border-white border-2;
+    @apply lg:my-4 p-2 w-5/12 rounded border-white border-2;
 }
 
 #characterinformation h1 {
@@ -90,11 +90,19 @@ body {
 }
 
 #characterinformation .activecharactercard {
-    @apply bg-gradient-to-b from-amber-500/95 to-amber-800/90 border-4 border-amber-600 shadow-amber-600/50 shadow-lg rounded h-full flex flex-col justify-center align-middle text-center;
+    @apply bg-gradient-to-b from-yellow-500/95 to-yellow-800/90 dark:from-yellow-800/95 dark:to-yellow-900/90 border-4 border-yellow-600 shadow-yellow-600/50 shadow-lg rounded h-full flex flex-col justify-center align-middle text-center;
+}
+
+#characterinformation .activecharactercarddark {
+    @apply bg-gradient-to-b from-yellow-800/95 to-yellow-900/90 border-4 border-yellow-700 shadow-yellow-600/50 shadow-lg rounded h-full flex flex-col justify-center align-middle text-center;
 }
 
 #characterinformation .pausedcharactercard {
-    @apply bg-gradient-to-b from-slate-400/95 to-slate-700/90 border-4 border-slate-600 shadow-slate-600/50 shadow-lg rounded h-full flex flex-col justify-center align-middle text-center;
+    @apply bg-gradient-to-b from-neutral-500/95 to-neutral-800/90 border-4 border-neutral-600 shadow-neutral-600/50 shadow-lg rounded h-full flex flex-col justify-center align-middle text-center;
+}
+
+#characterinformation .pausedcharactercarddark {
+    @apply bg-gradient-to-b from-neutral-800/95 to-neutral-900/90 border-4 border-neutral-700 shadow-neutral-600/50 shadow-lg rounded h-full flex flex-col justify-center align-middle text-center;
 }
 
 #charactercard .cardbuttons {

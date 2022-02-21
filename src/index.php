@@ -69,14 +69,14 @@ include "sidebar.php";
       <h1>Leander</h1>
       <h6>Warrior/Infiltrator</h6>
       <p>Dwilight ~ Tol Goldora</p>
-      <p class="lg:py-4 font-bold">7 hours</p>
-      <p class="italic">travelling</p>
+      <p class="font-bold">7 hours</p>
+      <p class="italic lg:mb-8">travelling</p>
       <div class="cardbuttons">
-        <button class="bg-yellow-500 py-4">Quickplay</button>
-        <button class="bg-yellow-500 py-4">Play</button>
+        <button class="bg-amber-400 py-4">Quickplay</button>
+        <button class="bg-amber-400 py-4">Play</button>
       </div>
       <p class="my-1 text-xs italic underline">
-        <a href="#" class="">Pause</a>
+        <a href="#">Pause</a>
       </p>
     </div>
   </div>
@@ -87,14 +87,14 @@ include "sidebar.php";
       <h1>Eurwen</h1>
       <h6>Courtier</h6>
       <p>Colonies ~ Outer Tilog</p>
-      <p class="lg:py-4 font-bold">12 hours</p>
-      <p class="italic">ok</p>
+      <p class="font-bold">12 hours</p>
+      <p class="italic lg:mb-8">ok</p>
       <div class="cardbuttons">
-        <button class="bg-yellow-800 py-4">Quickplay</button>
-        <button class="bg-yellow-800 py-4">Play</button>
+        <button class="bg-amber-400 py-4">Quickplay</button>
+        <button class="bg-amber-400 py-4">Play</button>
       </div>
       <p class="my-1 text-xs italic underline">
-        <a href="#" class="">Pause</a>
+        <a href="#">Pause</a>
       </p>
     </div>
   </div>
@@ -105,14 +105,10 @@ include "sidebar.php";
       <h1>Armin</h1>
       <h6>Adventurer</h6>
       <p>East Continent ~ Yssrgard</p>
-      <p class="lg:py-4 font-bold">&nbsp;</p>
-      <p class="italic">&nbsp;</p>
-      <div class="cardbuttons">
-        <button class="bg-neutral-500 py-4">Quickplay</button>
-        <button class="bg-neutral-500 py-4">Play</button>
-      </div>
+      <p class="font-bold">&nbsp;</p>
+      <p class="italic mb-8">&nbsp;</p>
       <p class="my-1 text-xs italic underline">
-        <a href="#" class="">Unpause</a>
+        <a href="#">Unpause</a>
       </p>
     </div>
   </div>
@@ -120,17 +116,13 @@ include "sidebar.php";
   <div class="charactercard">
     <div class="pausedcharactercarddark">
       <!-- paused character -->
-      <h1>Dinah</h1>
+      <h1 class="top">Dinah</h1>
       <h6>Adventurer</h6>
       <p>Beluaterra ~ Irondale</p>
-      <p class="lg:py-4 font-bold">&nbsp;</p>
-      <p class="italic">&nbsp;</p>
-      <div class="cardbuttons">
-        <button class="bg-neutral-600 py-4">Quickplay</button>
-        <button class="bg-neutral-600 py-4">Play</button>
-      </div>
+      <p class="font-bold">&nbsp;</p>
+      <p class="italic mb-8">&nbsp;</p>
       <p class="my-1 text-xs italic underline">
-        <a href="#" class="">Unpause</a>
+        <a href="#">Unpause</a>
       </p>
     </div>
   </div>

@@ -78,7 +78,7 @@ body {
 }
 
 #characterinformation .charactercard button {
-    @apply lg:my-4 p-2 w-5/12 rounded border-white border-2;
+    @apply lg:my-4 p-2 w-5/12 rounded border-white border-2 text-amber-900;
 }
 
 #characterinformation h1 {
@@ -90,19 +90,19 @@ body {
 }
 
 #characterinformation .activecharactercard {
-    @apply bg-gradient-to-b from-yellow-500/95 to-yellow-800/90 dark:from-yellow-800/95 dark:to-yellow-900/90 border-4 border-yellow-600 shadow-yellow-600/50 shadow-lg rounded h-full flex flex-col justify-center align-middle text-center;
+    @apply text-amber-900 bg-gradient-to-b from-amber-400/95 to-amber-800/90 border-4 border-amber-800 shadow-amber-800/50 shadow-lg h-full flex flex-col justify-center align-middle text-center;
 }
 
 #characterinformation .activecharactercarddark {
-    @apply bg-gradient-to-b from-yellow-800/95 to-yellow-900/90 border-4 border-yellow-700 shadow-yellow-600/50 shadow-lg rounded h-full flex flex-col justify-center align-middle text-center;
+    @apply bg-gradient-to-b from-amber-800/95 to-amber-400/90 border-4 border-amber-400 shadow-amber-400/50 shadow-lg h-full flex flex-col justify-center align-middle text-center;
 }
 
 #characterinformation .pausedcharactercard {
-    @apply bg-gradient-to-b from-neutral-500/95 to-neutral-800/90 border-4 border-neutral-600 shadow-neutral-600/50 shadow-lg rounded h-full flex flex-col justify-center align-middle text-center;
+    @apply bg-gradient-to-b from-neutral-500/95 to-neutral-800/90 border-4 border-neutral-600 shadow-neutral-600/50 shadow-lg h-full flex flex-col text-center;
 }
 
 #characterinformation .pausedcharactercarddark {
-    @apply bg-gradient-to-b from-neutral-800/95 to-neutral-900/90 border-4 border-neutral-700 shadow-neutral-600/50 shadow-lg rounded h-full flex flex-col justify-center align-middle text-center;
+    @apply bg-gradient-to-b from-neutral-800/95 to-neutral-900/90 border-4 border-neutral-700 shadow-neutral-600/50 shadow-lg h-full flex flex-col text-center;
 }
 
 #charactercard .cardbuttons {

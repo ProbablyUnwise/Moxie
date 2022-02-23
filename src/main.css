@@ -30,11 +30,11 @@ body {
 }
 
 #mobilemenu {
-    @apply col-span-2 grid grid-cols-5 gap-2 my-4 mx-2 lg:hidden text-center;
+    @apply col-span-2 grid grid-cols-3 gap-2 my-4 mx-2 lg:hidden text-center;
 }
 
 #menu {
-    @apply hidden lg:inline z-10 absolute mt-36 ml-4;
+    @apply hidden lg:inline z-10 absolute mt-36 ml-4 lg:flex-row;
 }
 
 #panel {

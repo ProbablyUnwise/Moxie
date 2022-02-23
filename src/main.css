@@ -77,34 +77,50 @@ body {
     background-image: url("../src/parts/img/lace.png");
 }
 
+#characterinformation .newcharactercard {
+    background-image: url("../src/parts/img/bm-stone-wall.jpg");
+}
+
 #characterinformation .charactercard button {
     @apply lg:my-4 p-2 w-5/12 rounded border-white border-2 text-amber-900;
 }
 
 #characterinformation h1 {
-    @apply font-bold text-3xl;
+    @apply font-bold text-3xl text-white;
 }
 
 #characterinformation h6 {
-    @apply italic text-sm mb-3;
+    @apply italic text-sm mb-3 text-white;
 }
 
 #characterinformation .activecharactercard {
-    @apply text-amber-900 bg-gradient-to-b from-amber-400/95 to-amber-800/90 border-4 border-amber-800 shadow-amber-800/50 shadow-lg h-full flex flex-col justify-center align-middle text-center;
-}
-
-#characterinformation .activecharactercarddark {
-    @apply bg-gradient-to-b from-amber-800/95 to-amber-400/90 border-4 border-amber-400 shadow-amber-400/50 shadow-lg h-full flex flex-col justify-center align-middle text-center;
+    @apply hover:text-amber-900 bg-gradient-to-b from-amber-800/95 via-amber-800/95 hover:via-amber-400/95 to-amber-400/90 border-4 hover:to-amber-400 border-amber-400 hover:border-amber-100 shadow-amber-400/50 shadow-2xl h-full flex flex-col justify-center align-middle text-center;
 }
 
 #characterinformation .pausedcharactercard {
-    @apply bg-gradient-to-b from-neutral-500/95 to-neutral-800/90 border-4 border-neutral-600 shadow-neutral-600/50 shadow-lg h-full flex flex-col text-center;
+    @apply bg-gradient-to-b from-neutral-800/95 to-neutral-900/90 border-4 border-neutral-700 hover:border-neutral-400 shadow-neutral-600/50 shadow h-full flex flex-col text-center;
 }
 
-#characterinformation .pausedcharactercarddark {
-    @apply bg-gradient-to-b from-neutral-800/95 to-neutral-900/90 border-4 border-neutral-700 shadow-neutral-600/50 shadow-lg h-full flex flex-col text-center;
+#characterinformation .newcharactercard {
+    @apply border-neutral-700 hover:border-neutral-400 border-2 border-dashed h-full flex flex-col text-center justify-center align-middle;
 }
 
-#charactercard .cardbuttons {
-    @apply flex flex-col;
+#characterinformation .cardbuttons button {
+    @apply bg-amber-400 py-4 lg:py-2;
+}
+
+#characterinformation .activecharactercard a {
+    @apply text-amber-900;
+}
+
+#characterinformation .hours {
+    @apply font-bold;
+}
+
+#characterinformation .status {
+    @apply italic lg:mb-8;
+}
+
+#characterinformation .pausebutton {
+    @apply my-1 text-xs italic underline relative bottom-0;
 }

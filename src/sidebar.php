@@ -29,7 +29,7 @@
         </div>
         <div id="globe">
             <!-- day/night globe -->
-            <a href="index.php"><img src="../src/parts/img/bm-menu-bottom-day.png" alt="globe day"></a>
+            <a href="index.php"><img src="../src/parts/img/bm-menu-bottom-day.png" alt="globe day"></a><!-- this needs switched out depending on server time -->
         </div>
     </div>
 

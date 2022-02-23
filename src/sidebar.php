@@ -23,7 +23,7 @@
         </div>
         <div id="panel">
             <!-- sidebar background -->
-            <a href="#"><img src="../src/parts/img/bm-menu-top.png" alt="menu panel"></a>
+            <img src="../src/parts/img/bm-menu-top.png" alt="menu panel">
         </div>
         <div id="globe">
             <!-- day/night globe -->

@@ -65,13 +65,33 @@ include "sidebar.php";
   <!-- grid of character cards -->
 
   <div class="charactercard">
+    <div class="activecharactercardnew">
+      <!-- active character -->
+      <h1 class="charactername">Leander</h1>
+      <h6 class="characterclass">Warrior/Infiltrator</h6>
+      <p class="characterhome">Dwilight ~ Tol Goldora</p>
+      <p class="hours">12 hours in pool</p>
+      <p class="status">22 new messages</p>
+      <p class="status font-extrabold uppercase">ok</p>
+      <div class="cardbuttons">
+        <button>Quickplay</button>
+        <button>Play</button>
+      </div>
+      <p class="pausebutton">
+        <a href="#">Pause</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="charactercard">
     <div class="activecharactercard">
       <!-- active character -->
       <h1 class="charactername">Eurwen</h1>
       <h6 class="characterclass">Courtier</h6>
       <p class="characterhome">Colonies ~ Outer Tilog</p>
-      <p class="hours">12 hours</p>
-      <p class="status">ok</p>
+      <p class="hours">12 hours in pool</p>
+      <p class="status">No new messages</p>
+      <p class="status font-extrabold uppercase">ok</p>
       <div class="cardbuttons">
         <button>Quickplay</button>
         <button>Play</button>

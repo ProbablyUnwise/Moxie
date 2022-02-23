@@ -93,8 +93,12 @@ body {
     @apply italic text-sm mb-3 text-white;
 }
 
-#characterinformation .activecharactercard {
+#characterinformation .activecharactercardnew {
     @apply hover:text-amber-900 bg-gradient-to-b from-amber-800/95 via-amber-800/95 hover:via-amber-400/95 to-amber-400/90 border-4 hover:to-amber-400 border-amber-400 hover:border-amber-100 shadow-amber-400/50 shadow-2xl h-full flex flex-col justify-center align-middle text-center;
+}
+
+#characterinformation .activecharactercard {
+    @apply bg-gradient-to-b from-amber-900/95 to-amber-700/90 border-4 border-amber-700 hover:border-amber-100 shadow-amber-600/50 shadow-lg h-full flex flex-col justify-center align-middle text-center;
 }
 
 #characterinformation .pausedcharactercard {
@@ -118,7 +122,7 @@ body {
 }
 
 #characterinformation .status {
-    @apply italic lg:mb-8;
+    @apply italic lg:mb-2;
 }
 
 #characterinformation .pausebutton {

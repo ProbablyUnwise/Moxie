@@ -8,17 +8,15 @@
         <li>&nbsp;</li><!-- blank li for ending rivet -->
     </ul>
 </div>
+<!-- split rest of page into two col -->
 <div id="pagemenus">
-    <!-- split rest of page into two col -->
     <div id="pcmenu">
         <!-- sidebar menu for pcs -->
         <div id="menu">
             <ul>
-                <li>Account</li>
-                <li>Edit Data</li>
-                <li>Options</li>
-                <li>Wiki</li>
-                <li>Forums</li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Edit Data</a></li>
+                <li><a href="#">Options</a></li>
             </ul>
         </div>
         <div id="panel">

@@ -7,6 +7,7 @@ body {
     @apply text-white m-0 p-0;
 }
 
+/* nav bar along top of all pages */
 #titlebar {
     background-image: url("../src/parts/img/bm-title-bar.jpg");
     @apply bg-bottom lg:fixed flex flex-row justify-center items-center w-screen py-1 font-bold lg:text-lg text-xs;
@@ -21,34 +22,46 @@ body {
     @apply px-1 pb-4;
 }
 
+/* leftmost grid, for menus */
 #pagemenus {
     @apply grid grid-cols-2;
 }
 
+/* side nav, only on desktop */
 #pcmenu {
     @apply hidden lg:inline fixed top-2;
 }
 
+/* secondary nav, only on mobile */
 #mobilemenu {
     @apply col-span-2 grid grid-cols-3 gap-2 my-4 mx-2 lg:hidden text-center;
 }
 
+/* desktop menu list */
 #menu {
     @apply hidden lg:inline z-10 absolute mt-36 ml-4 lg:flex-row;
 }
 
+#menu a {
+    @apply font-bold text-2xl text-amber-100 hover:italic hover:text-amber-200;
+}
+
+/* desktop menu background panel */
 #panel {
     @apply hidden lg:inline z-0;
 }
 
+/* desktop menu globe */
 #globe {
     @apply hidden lg:inline z-0;
 }
 
+/* rightmost grid, for page content */
 #pagecontent {
     @apply lg:ml-52 lg:mt-24 col-span-2;
 }
 
+/* player info, displayed on family page */
 #playerinformation {
     @apply grid grid-cols-1 lg:grid-cols-4 px-4;
 }
@@ -69,21 +82,17 @@ body {
     @apply rounded-md m-2 lg:m-1 w-11/12 lg:w-1/2 py-2 px-8;
 }
 
+/* list of characters, displayed on family page */
 #characterinformation {
     @apply grid grid-cols-1 lg:grid-cols-4 gap-8 pb-2 lg:mr-12;
 }
 
+/* card background used on all cards */
 #characterinformation .charactercard {
     background-image: url("../src/parts/img/lace.png");
 }
 
-#characterinformation .newcharactercard {
-    background-image: url("../src/parts/img/bm-stone-wall.jpg");
-}
 
-#characterinformation .charactercard button {
-    @apply lg:my-4 p-2 w-5/12 rounded border-white border-2 text-amber-900;
-}
 
 #characterinformation h1 {
     @apply font-bold text-3xl text-white;
@@ -93,38 +102,48 @@ body {
     @apply italic text-sm mb-3 text-white;
 }
 
+/* existing character with new messages */
 #characterinformation .activecharactercardnew {
     @apply hover:text-amber-900 bg-gradient-to-b from-amber-800/95 via-amber-800/95 hover:via-amber-400/95 to-amber-400/90 border-4 hover:to-amber-400 border-amber-400 hover:border-amber-100 shadow-amber-400/50 shadow-2xl h-full flex flex-col justify-center align-middle text-center;
 }
 
+/* existing character with no messages */
 #characterinformation .activecharactercard {
     @apply bg-gradient-to-b from-amber-900/95 to-amber-700/90 border-4 border-amber-700 hover:border-amber-100 shadow-amber-600/50 shadow-lg h-full flex flex-col justify-center align-middle text-center;
 }
 
+/* paused character */
 #characterinformation .pausedcharactercard {
     @apply bg-gradient-to-b from-neutral-800/95 to-neutral-900/90 border-4 border-neutral-700 hover:border-neutral-400 shadow-neutral-600/50 shadow h-full flex flex-col text-center;
 }
 
+/* new character card */
 #characterinformation .newcharactercard {
+    background-image: url("../src/parts/img/bm-stone-wall.jpg");
     @apply border-neutral-700 hover:border-neutral-400 border-2 border-dashed h-full flex flex-col text-center justify-center align-middle;
 }
 
-#characterinformation .cardbuttons button {
-    @apply bg-amber-400 py-4 lg:py-2;
+/* play/quickplay buttons */
+#characterinformation .charactercard button {
+    @apply lg:my-4 p-2 w-5/12 rounded border-white border-2 text-amber-900 bg-amber-400;
 }
 
+/* color for links in card, pause link only atm */
 #characterinformation .activecharactercardnew a {
     @apply text-amber-900;
 }
 
+/* hours left in pool link */
 #characterinformation .hours {
     @apply font-bold;
 }
 
+/* current character status */
 #characterinformation .status {
     @apply italic lg:mb-2;
 }
 
+/* applied to pause link only */
 #characterinformation .pausebutton {
     @apply my-1 text-xs italic underline relative bottom-0;
 }

@@ -9,7 +9,6 @@ include "sidebar.php";
     <h1>
       Player Information
     </h1>
-    <p>
       <ul class="list-none">
         <li><strong>ID: </strong>10101</li>
         <li><strong>Name: </strong>Juan Ramón Mateo</li>
@@ -17,7 +16,6 @@ include "sidebar.php";
         <li><strong>Email: </strong>probably.unwise@protonmail.ch</li>
         <li><strong>Last Login: </strong>2021-10-14 18:13:29 (seconds ago)</li>
       </ul>
-    </p>
   </div>
   <div>
     <!-- second -->

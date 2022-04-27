@@ -4,6 +4,7 @@ include "sidebar.php";
 ?>
 
 <div id="playerinformation">
+  <!-- four segments of player information -->
   <div>
     <!-- first -->
     <h1>
@@ -40,7 +41,7 @@ include "sidebar.php";
     </p>
   </div>
   <div>
-    <!-- fifth -->
+    <!-- fourth -->
     <h1>
       Non-existant Discord Widget
     </h1>
@@ -61,7 +62,6 @@ include "sidebar.php";
 
 <div id="characterinformation">
   <!-- grid of character cards -->
-
   <div class="charactercard">
     <div class="activecharactercardnew">
       <!-- active character -->
@@ -119,8 +119,6 @@ include "sidebar.php";
       <p class="underline mb-6"><a href="#">New Noble</a><br><a href="#">New Adventurer</a></p>
     </div>
   </div>
-
 </div>
-
 
 <?php include "footer.php"; ?>
